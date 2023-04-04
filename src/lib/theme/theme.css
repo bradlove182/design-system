@@ -1,0 +1,42 @@
+:root {
+    --brand: hsla(var(--indigo-50));
+    --background: hsla(var(--gray-90));
+    --forground: hsla(var(--gray-85));
+
+    --text: hsla(var(--gray-20));
+    --text-amplified: hsla(var(--gray-00));
+    --text-subdued: hsla(var(--gray-30));
+
+    --font-size-1: 14px;
+    --font-size-2: 0.875rem;
+    --font-size-3: 1rem;
+    --font-size-4: 1.125rem;
+    --font-size-5: 1.25rem;
+    --font-size-6: 1.5rem;
+    --font-size-7: 2rem;
+
+    --font-weight-1: 300;
+    --font-weight-2: 400;
+    --font-weight-3: 500;
+    --font-weight-4: 600;
+}
+
+.bradlove-light {
+    --background: hsla(var(--gray-00));
+    --forground: hsla(var(--gray-10));
+    --text: hsla(var(--gray-65));
+    --text-amplified: hsla(var(--gray-80));
+    --text-subdued: hsla(var(--gray-55));
+}
+
+html {
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+body {
+    font-size: var(--font-size-3);
+    line-height: 1.5;
+}

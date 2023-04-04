@@ -1,0 +1,43 @@
+.base {
+    position: relative;
+    color: currentColor;
+}
+
+.gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient-0);
+    display: inline-block;
+}
+
+.h1 {
+    font-size: var(--font-size-7);
+    color: var(--text-amplified);
+    font-weight: var(--font-weight-4);
+}
+
+.h2 {
+    font-size: var(--font-size-6);
+    color: var(--text-amplified);
+}
+
+.h3 {
+    font-size: var(--font-size-5);
+    color: var(--text-amplified);
+}
+
+.h4 {
+    font-size: var(--font-size-4);
+    color: var(--text-amplified);
+}
+
+.h5 {
+    font-size: var(--font-size-3);
+    color: var(--text-amplified);
+}
+
+.h6 {
+    font-size: var(--font-size-2);
+    color: var(--text-amplified);
+}

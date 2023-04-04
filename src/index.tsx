@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 const App = React.lazy(() => import("./app"));
 
