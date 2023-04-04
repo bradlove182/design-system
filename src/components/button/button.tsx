@@ -1,39 +1,24 @@
 import React from "react";
+import { buildClassNames } from "../../utils/class";
+
+import style from "./index.module.css";
 
 export interface ButtonProps {
     children: React.ReactNode;
-    variant?: "base" | "icon";
-    appearance?: "primary" | "transparent" | "outline";
+    variant?: "primary" | "secondary" | "transparent" | "outline" | "gradient";
+    size?: "default" | "small";
+    icon?: boolean;
 }
-
-const buttonAppearances: Record<
-    NonNullable<ButtonProps["appearance"]>,
-    string
-> = {
-    primary: "bg-brand text-white",
-    transparent: "bg-transparent hover:text-brand",
-    outline: "border",
-};
-
-const buttonVariants: Record<NonNullable<ButtonProps["variant"]>, string> = {
-    base: "w-max",
-    icon: "w-11",
-};
 
 const Button: React.ComponentType<ButtonProps> = ({
     children,
-    variant = "base",
-    appearance = "primary",
+    variant = "primary",
+    size = "default",
+    icon = false,
 }) => {
     return (
         <button
-            className={[
-                "relative flex h-11 items-center justify-center gap-2 rounded-lg px-4 text-base transition duration-200 hover:shadow-glow",
-                buttonAppearances[appearance],
-                buttonVariants[variant],
-            ]
-                .filter(Boolean)
-                .join(" ")}
+            className={buildClassNames([style.button, style[variant]])}
             type="button"
         >
             {children}

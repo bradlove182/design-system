@@ -22,6 +22,22 @@
     gap: var(--spacing-5);
 }
 
+.direction-row {
+    flex-direction: row;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
 .wrap {
     flex-wrap: wrap;
 }

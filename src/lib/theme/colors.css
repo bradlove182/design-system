@@ -1,6 +1,6 @@
 /* Color Tokens */
 :root {
-    --base-gray-hue: 215;
+    --base-gray-hue: 240;
     --base-gray: var(--base-gray-hue), 16%;
     --gray-00: var(--base-gray), 100%;
     --gray-01: var(--base-gray), 99%;
@@ -198,7 +198,7 @@
     --blue-95: var(--base-blue), 5%;
     --blue-100: var(--base-blue), 0%;
 
-    --base-indigo-hue: 265;
+    --base-indigo-hue: 240;
     --base-indigo: var(--base-indigo-hue), 100%;
     --indigo-00: var(--base-indigo), 100%;
     --indigo-05: var(--base-indigo), 95%;
@@ -248,7 +248,8 @@
 
     --gradient-0: linear-gradient(
         90deg,
-        hsla(var(--indigo-50)),
-        hsla(var(--pink-50))
+        hsla(var(--blue-60)),
+        hsla(var(--blue-20)),
+        hsla(var(--pink-60))
     );
 }

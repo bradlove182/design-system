@@ -1,2 +1,2 @@
 
-export const className = (classes: string[]) => classes.filter(Boolean).join(" ");
+export const buildClassNames = (classes: string[]) => classes.filter(Boolean).join(" ");

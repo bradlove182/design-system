@@ -1,5 +1,5 @@
 import React from "react";
-import { className } from "../../utils/class";
+import { buildClassNames } from "../../utils/class";
 
 import style from "./index.module.css";
 
@@ -35,7 +35,7 @@ const Flex: React.ComponentType<FlexProps> = ({
 }) => {
     return (
         <div
-            className={className([
+            className={buildClassNames([
                 style.flex,
                 style[`gap-${gap}`],
                 style[`items-${alignItems}`],
@@ -48,5 +48,7 @@ const Flex: React.ComponentType<FlexProps> = ({
         </div>
     );
 };
+
+Flex.displayName = "Flex";
 
 export default Flex;
