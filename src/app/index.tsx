@@ -1,23 +1,24 @@
 import { useState } from "react";
 
-import { Button, Text } from "../components";
+import { Button, Text, Container, Flex } from "../components";
 
 function App() {
     return (
-        <div>
-            <Text as={"h1"}>{"Design System"}</Text>
+        <Container>
+            <Text as={"h1"}>{"Design System / Component Library"}</Text>
             <Text as={"h2"}>{"Design System"}</Text>
             <Text as={"h3"}>{"Design System"}</Text>
             <Text as={"h4"}>{"Design System"}</Text>
             <Text as={"h5"}>{"Design System"}</Text>
             <Text as={"h6"}>{"Design System"}</Text>
             <Text>{"Design System"}</Text>
+            <Flex>
+                <Button>{"Button"}</Button>
+                <Button appearance="transparent">{"Button"}</Button>
+                <Button appearance="outline">{"Button"}</Button>
+            </Flex>
             <div className="flex flex-col gap-2">
-                <div className="flex gap-2">
-                    <Button>{"Button"}</Button>
-                    <Button appearance="transparent">{"Button"}</Button>
-                    <Button appearance="outline">{"Button"}</Button>
-                </div>
+                <div className="flex gap-2"></div>
                 <div className="flex gap-2">
                     <Button variant="icon">{"1"}</Button>
                     <Button variant="icon" appearance="transparent">
@@ -28,7 +29,7 @@ function App() {
                     </Button>
                 </div>
             </div>
-        </div>
+        </Container>
     );
 }
 

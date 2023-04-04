@@ -1,5 +1,5 @@
 import React from "react";
-
+import { className } from "../../utils/class";
 import style from "./index.module.css";
 
 type IntrinsicTextElements = Extract<
@@ -10,19 +10,21 @@ type IntrinsicTextElements = Extract<
 export interface TextProps {
     as?: IntrinsicTextElements;
     children: React.ReactNode;
-    appearance?: "base" | "gradient";
+    appearance?: "default" | "gradient";
 }
 
 const Text: React.ComponentType<TextProps> = ({
     as = "p",
     children,
-    appearance = "base",
+    appearance = "default",
 }) => {
     return React.createElement(
         as,
-        { className: [style[appearance], style[as]].filter(Boolean).join(" ") },
+        { className: className([style[appearance], style[as]]) },
         children
     );
 };
+
+Text.displayName = "Text";
 
 export default Text;

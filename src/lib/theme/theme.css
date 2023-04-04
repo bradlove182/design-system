@@ -19,6 +19,12 @@
     --font-weight-2: 400;
     --font-weight-3: 500;
     --font-weight-4: 600;
+
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 16px;
+    --spacing-4: 32px;
+    --spacing-5: 64px;
 }
 
 .bradlove-light {
