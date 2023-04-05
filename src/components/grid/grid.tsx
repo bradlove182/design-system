@@ -1,5 +1,4 @@
 import React from "react";
-import { buildClassNames } from "../../utils/class";
 
 type IntrinsicBlockElements = Extract<
     keyof JSX.IntrinsicElements,
@@ -7,8 +6,9 @@ type IntrinsicBlockElements = Extract<
 >;
 
 import style from "./index.module.css";
+import { buildClassNames } from "../../utils/class";
 
-export interface FlexProps {
+export interface GridProps {
     children: React.ReactNode;
     gap?: 0 | 1 | 2 | 3 | 4 | 5;
     direction?: "column" | "column-reverse" | "row" | "row-reverse";
@@ -31,31 +31,14 @@ export interface FlexProps {
     as?: IntrinsicBlockElements;
 }
 
-const Flex: React.ComponentType<FlexProps> = ({
-    children,
-    alignItems = "center",
-    gap = 3,
-    direction = "row",
-    justifyContent = "start",
-    wrap = "nowrap",
-    as = "div",
-}) => {
+const Grid: React.ComponentType<GridProps> = ({ children, as = "div" }) => {
     return React.createElement(
         as,
-        {
-            className: buildClassNames([
-                style.flex,
-                style[`gap-${gap}`],
-                style[`items-${alignItems}`],
-                style[`direction-${direction}`],
-                style[`justify-${justifyContent}`],
-                style[wrap],
-            ]),
-        },
+        { className: buildClassNames([""]) },
         children
     );
 };
 
-Flex.displayName = "Flex";
+Grid.displayName = "Grid";
 
-export default Flex;
+export default Grid;

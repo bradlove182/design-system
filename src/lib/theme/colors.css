@@ -249,7 +249,6 @@
     --gradient-0: linear-gradient(
         90deg,
         hsla(var(--blue-60)),
-        hsla(var(--blue-20)),
         hsla(var(--pink-60))
     );
 }

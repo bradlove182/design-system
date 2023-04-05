@@ -1,4 +1,4 @@
-import { SectionTypography } from "./sections";
+import { SectionTypography, SectionColors } from "./sections";
 import { Button, Text, Container, Flex } from "../components";
 
 import style from "./index.module.css";
@@ -8,10 +8,11 @@ function App() {
         <div className={style.app}>
             <Container>
                 <Flex gap={5} direction="column" alignItems="start">
-                    <Flex justifyContent="space-between" alignItems="center">
-                        <Text as={"h1"}>{"Design System / Components"}</Text>
+                    <Flex gap={0} direction="column" alignItems="start">
                         <span>{"v1.0"}</span>
+                        <Text as={"h1"}>{"Design System / Components"}</Text>
                     </Flex>
+                    <SectionColors />
                     <SectionTypography />
                     <Flex gap={3}>
                         <Button>{"Primary"}</Button>
