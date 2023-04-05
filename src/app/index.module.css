@@ -1,3 +1,19 @@
 .app {
     padding: var(--spacing-5) 0;
 }
+
+.palette-grid {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+
+.color-swatch-grid {
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
+    margin-right: var(--spacing-3);
+}
+
+.color-swatch {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: var(--border-2) solid var(--border-color);
+}

@@ -1,6 +1,7 @@
 .grid {
     display: grid;
     height: inherit;
+    width: 100%;
 }
 
 .gap-1 {

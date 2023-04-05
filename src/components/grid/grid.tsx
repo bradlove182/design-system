@@ -16,6 +16,7 @@ export interface GridProps {
     justifyContent?: "center" | "end" | "space-between" | "start";
     flow?: "row" | "column" | "dense" | "row-dense" | "column-dense";
     as?: IntrinsicBlockElements;
+    className?: string;
 }
 
 const Grid: React.ComponentType<GridProps> = ({
@@ -26,6 +27,7 @@ const Grid: React.ComponentType<GridProps> = ({
     flow = "row",
     alignItems = "stretch",
     justifyContent = "center",
+    className = "",
 }) => {
     return React.createElement(
         as,
@@ -37,6 +39,7 @@ const Grid: React.ComponentType<GridProps> = ({
                 style[`columns-${columns}`],
                 style[`items-${alignItems}`],
                 style[`justify-${justifyContent}`],
+                className,
             ]),
         },
         children
