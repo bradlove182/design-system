@@ -5,7 +5,7 @@
     --foreground: hsla(var(--gray-85));
 
     --text: hsla(var(--gray-15));
-    --text-amplified: hsla(var(--gray-00));
+    --text-amplified: hsla(var(--gray-0));
     --text-subdued: hsla(var(--gray-30));
     --text-white: #ffffff;
     --text-black: #000000;
@@ -58,12 +58,12 @@
 }
 
 .bradlove-light {
-    --background: hsla(var(--gray-00));
-    --foreground: hsla(var(--gray-02));
+    --background: hsla(var(--gray-0));
+    --foreground: hsla(var(--gray-2));
     --text: hsla(var(--gray-65));
     --text-amplified: hsla(var(--gray-80));
     --text-subdued: hsla(var(--gray-55));
-    --border-color: hsla(var(--gray-05));
+    --border-color: hsla(var(--gray-5));
 }
 
 html {

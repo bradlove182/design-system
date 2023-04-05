@@ -1,0 +1,100 @@
+.grid {
+    display: grid;
+    height: inherit;
+}
+
+.gap-1 {
+    gap: var(--spacing-1);
+}
+
+.gap-2 {
+    gap: var(--spacing-2);
+}
+
+.gap-3 {
+    gap: var(--spacing-3);
+}
+
+.gap-4 {
+    gap: var(--spacing-4);
+}
+
+.gap-5 {
+    gap: var(--spacing-5);
+}
+
+.columns-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.items-baseline {
+    align-items: baseline;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: end;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.flow-row {
+    grid-auto-flow: row;
+}
+
+.flow-column {
+    grid-auto-flow: column;
+}
+
+.flow-dense {
+    grid-auto-flow: dense;
+}
+
+.flow-row-dense {
+    grid-auto-flow: row dense;
+}
+
+.flow-column-dense {
+    grid-auto-flow: column dense;
+}

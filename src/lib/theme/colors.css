@@ -2,14 +2,14 @@
 :root {
     --base-gray-hue: 240;
     --base-gray: var(--base-gray-hue), 16%;
-    --gray-00: var(--base-gray), 100%;
-    --gray-01: var(--base-gray), 99%;
-    --gray-02: var(--base-gray), 98%;
-    --gray-03: var(--base-gray), 97%;
-    --gray-05: var(--base-gray), 95%;
-    --gray-07: var(--base-gray), 93%;
-    --gray-08: var(--base-gray), 92%;
-    --gray-09: var(--base-gray), 91%;
+    --gray-0: var(--base-gray), 100%;
+    --gray-1: var(--base-gray), 99%;
+    --gray-2: var(--base-gray), 98%;
+    --gray-3: var(--base-gray), 97%;
+    --gray-5: var(--base-gray), 95%;
+    --gray-7: var(--base-gray), 93%;
+    --gray-8: var(--base-gray), 92%;
+    --gray-9: var(--base-gray), 91%;
     --gray-10: var(--base-gray), 90%;
     --gray-15: var(--base-gray), 85%;
     --gray-20: var(--base-gray), 80%;
@@ -32,8 +32,8 @@
 
     --base-pink-hue: 320;
     --base-pink: var(--base-pink-hue), 100%;
-    --pink-00: var(--base-pink), 100%;
-    --pink-05: var(--base-pink), 95%;
+    --pink-0: var(--base-pink), 100%;
+    --pink-5: var(--base-pink), 95%;
     --pink-10: var(--base-pink), 90%;
     --pink-15: var(--base-pink), 85%;
     --pink-20: var(--base-pink), 80%;
@@ -56,8 +56,8 @@
 
     --base-red-hue: 350;
     --base-red: var(--base-red-hue), 100%;
-    --red-00: var(--base-red), 100%;
-    --red-05: var(--base-red), 95%;
+    --red-0: var(--base-red), 100%;
+    --red-5: var(--base-red), 95%;
     --red-10: var(--base-red), 90%;
     --red-15: var(--base-red), 85%;
     --red-20: var(--base-red), 80%;
@@ -80,8 +80,8 @@
 
     --base-orange-hue: 30;
     --base-orange: var(--base-orange-hue), 100%;
-    --orange-00: var(--base-orange), 100%;
-    --orange-05: var(--base-orange), 95%;
+    --orange-0: var(--base-orange), 100%;
+    --orange-5: var(--base-orange), 95%;
     --orange-10: var(--base-orange), 90%;
     --orange-15: var(--base-orange), 85%;
     --orange-20: var(--base-orange), 80%;
@@ -104,8 +104,8 @@
 
     --base-yellow-hue: 45;
     --base-yellow: var(--base-yellow-hue), 100%;
-    --yellow-00: var(--base-yellow), 100%;
-    --yellow-05: var(--base-yellow), 95%;
+    --yellow-0: var(--base-yellow), 100%;
+    --yellow-5: var(--base-yellow), 95%;
     --yellow-10: var(--base-yellow), 90%;
     --yellow-15: var(--base-yellow), 85%;
     --yellow-20: var(--base-yellow), 80%;
@@ -128,8 +128,8 @@
 
     --base-green-hue: 140;
     --base-green: var(--base-green-hue), 100%;
-    --green-00: var(--base-green), 100%;
-    --green-05: var(--base-green), 95%;
+    --green-0: var(--base-green), 100%;
+    --green-5: var(--base-green), 95%;
     --green-10: var(--base-green), 90%;
     --green-15: var(--base-green), 85%;
     --green-20: var(--base-green), 80%;
@@ -152,8 +152,8 @@
 
     --base-teal-hue: 175;
     --base-teal: var(--base-teal-hue), 100%;
-    --teal-00: var(--base-teal), 100%;
-    --teal-05: var(--base-teal), 95%;
+    --teal-0: var(--base-teal), 100%;
+    --teal-5: var(--base-teal), 95%;
     --teal-10: var(--base-teal), 90%;
     --teal-15: var(--base-teal), 85%;
     --teal-20: var(--base-teal), 80%;
@@ -176,8 +176,8 @@
 
     --base-blue-hue: 215;
     --base-blue: var(--base-blue-hue), 100%;
-    --blue-00: var(--base-blue), 100%;
-    --blue-05: var(--base-blue), 95%;
+    --blue-0: var(--base-blue), 100%;
+    --blue-5: var(--base-blue), 95%;
     --blue-10: var(--base-blue), 90%;
     --blue-15: var(--base-blue), 85%;
     --blue-20: var(--base-blue), 80%;
@@ -200,8 +200,8 @@
 
     --base-indigo-hue: 240;
     --base-indigo: var(--base-indigo-hue), 100%;
-    --indigo-00: var(--base-indigo), 100%;
-    --indigo-05: var(--base-indigo), 95%;
+    --indigo-0: var(--base-indigo), 100%;
+    --indigo-5: var(--base-indigo), 95%;
     --indigo-10: var(--base-indigo), 90%;
     --indigo-15: var(--base-indigo), 85%;
     --indigo-20: var(--base-indigo), 80%;
@@ -224,8 +224,8 @@
 
     --base-purple-hue: 275;
     --base-purple: var(--base-purple-hue), 100%;
-    --purple-00: var(--base-purple), 100%;
-    --purple-05: var(--base-purple), 95%;
+    --purple-0: var(--base-purple), 100%;
+    --purple-5: var(--base-purple), 95%;
     --purple-10: var(--base-purple), 90%;
     --purple-15: var(--base-purple), 85%;
     --purple-20: var(--base-purple), 80%;
