@@ -10,9 +10,9 @@
     --text-subdued: hsla(var(--gray-30));
     --text-white: #ffffff;
     --text-black: #000000;
-    --text-error: hsla(var(--red-25));
-    --text-success: hsla(var(--green-25));
-    --text-warning: hsla(var(--yellow-25));
+    --text-error: hsla(var(--red-30));
+    --text-success: hsla(var(--green-30));
+    --text-warning: hsla(var(--yellow-30));
 
     --font-size-1: 14px;
     --font-size-2: 0.875rem;
@@ -51,6 +51,8 @@
     --border-2: 2px;
     --border-3: 3px;
     --border-4: 4px;
+
+    --form-input-disabled: hsla(var(--gray-55));
 
     --box-shadow-glow: 0 2px 40px -4px hsla(var(--indigo-35), 1);
     --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 1%);

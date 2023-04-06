@@ -1,4 +1,10 @@
-import { SectionTypography, SectionColors, SectionIcons } from "./sections";
+import {
+    SectionTypography,
+    SectionColors,
+    SectionIcons,
+    SectionLists,
+    SectionButtons,
+} from "./sections";
 import { Button, Text, Container, Flex } from "../components";
 
 import style from "./index.module.css";
@@ -15,13 +21,8 @@ function App() {
                     <SectionColors />
                     <SectionTypography />
                     <SectionIcons />
-                    <Flex gap={3}>
-                        <Button>{"Primary"}</Button>
-                        <Button variant="secondary">{"Secondary"}</Button>
-                        <Button variant="transparent">{"Transparent"}</Button>
-                        <Button variant="outline">{"Outline"}</Button>
-                        <Button variant="gradient">{"Gradient"}</Button>
-                    </Flex>
+                    <SectionLists />
+                    <SectionButtons />
                 </Flex>
             </Container>
         </div>

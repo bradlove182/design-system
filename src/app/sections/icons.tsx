@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, IconGitHub, IconArrow, IconCross } from "../../components";
+import { Text, Grid, Icon } from "../../components";
 
 const SectionIcons: React.ComponentType = () => {
     return (
@@ -11,35 +11,42 @@ const SectionIcons: React.ComponentType = () => {
                     alignItems="center"
                     justifyContent="space-between"
                 >
-                    <IconGitHub variant="brand" />
-                    <IconGitHub variant="error" />
-                    <IconGitHub variant="success" />
-                    <IconGitHub variant="warning" />
-                    <IconGitHub variant="default" />
-                    <IconGitHub variant="subdued" />
-                    <IconGitHub variant="amplified" />
+                    <Icon.GitHub variant="brand" />
+                    <Icon.GitHub variant="error" />
+                    <Icon.GitHub variant="success" />
+                    <Icon.GitHub variant="warning" />
+                    <Icon.GitHub variant="default" />
+                    <Icon.GitHub variant="subdued" />
+                    <Icon.GitHub variant="amplified" />
                 </Grid>
                 <Grid columns={1} gap={3}>
                     <Grid columns={5} alignItems="center">
-                        <IconGitHub size={5} />
-                        <IconGitHub size={4} />
-                        <IconGitHub size={3} />
-                        <IconGitHub size={2} />
-                        <IconGitHub size={1} />
+                        <Icon.GitHub size={5} />
+                        <Icon.GitHub size={4} />
+                        <Icon.GitHub size={3} />
+                        <Icon.GitHub size={2} />
+                        <Icon.GitHub size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <IconArrow size={5} />
-                        <IconArrow size={4} />
-                        <IconArrow size={3} />
-                        <IconArrow size={2} />
-                        <IconArrow size={1} />
+                        <Icon.Arrow size={5} />
+                        <Icon.Arrow size={4} />
+                        <Icon.Arrow size={3} />
+                        <Icon.Arrow size={2} />
+                        <Icon.Arrow size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <IconCross size={5} />
-                        <IconCross size={4} />
-                        <IconCross size={3} />
-                        <IconCross size={2} />
-                        <IconCross size={1} />
+                        <Icon.Cross size={5} />
+                        <Icon.Cross size={4} />
+                        <Icon.Cross size={3} />
+                        <Icon.Cross size={2} />
+                        <Icon.Cross size={1} />
+                    </Grid>
+                    <Grid columns={5} alignItems="center">
+                        <Icon.Dot size={5} />
+                        <Icon.Dot size={4} />
+                        <Icon.Dot size={3} />
+                        <Icon.Dot size={2} />
+                        <Icon.Dot size={1} />
                     </Grid>
                 </Grid>
             </Grid>

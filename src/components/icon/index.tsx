@@ -1,3 +1,8 @@
+import IconArrow from "./arrow";
+import IconCross from "./cross";
+import IconGitHub from "./github";
+import IconDot from "./dot";
+
 export interface IconProps {
     variant?:
         | "brand"
@@ -10,6 +15,11 @@ export interface IconProps {
     size?: 1 | 2 | 3 | 4 | 5;
 }
 
-export { default as IconGitHub } from "./github";
-export { default as IconArrow } from "./arrow";
-export { default as IconCross } from "./cross";
+const Icon = () => {};
+
+Icon.Arrow = IconArrow;
+Icon.GitHub = IconGitHub;
+Icon.Cross = IconCross;
+Icon.Dot = IconDot;
+
+export { Icon };
