@@ -1,7 +1,7 @@
 /* Color Tokens */
 :root {
     --base-gray-hue: 240;
-    --base-gray: var(--base-gray-hue), 16%;
+    --base-gray: var(--base-gray-hue), 5%;
     --gray-0: var(--base-gray), 100%;
     --gray-1: var(--base-gray), 99%;
     --gray-2: var(--base-gray), 98%;

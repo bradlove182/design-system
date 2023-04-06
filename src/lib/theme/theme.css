@@ -10,6 +10,9 @@
     --text-subdued: hsla(var(--gray-30));
     --text-white: #ffffff;
     --text-black: #000000;
+    --text-error: hsla(var(--red-25));
+    --text-success: hsla(var(--green-25));
+    --text-warning: hsla(var(--yellow-25));
 
     --font-size-1: 14px;
     --font-size-2: 0.875rem;
@@ -23,6 +26,12 @@
     --font-weight-2: 400;
     --font-weight-3: 500;
     --font-weight-4: 600;
+
+    --icon-size-1: 12px;
+    --icon-size-2: 16px;
+    --icon-size-3: 24px;
+    --icon-size-4: 32px;
+    --icon-size-5: 40px;
 
     --spacing-1: 4px;
     --spacing-2: 8px;

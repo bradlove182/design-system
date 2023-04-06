@@ -11,7 +11,7 @@ import { buildClassNames } from "../../utils/class";
 export interface GridProps {
     children: React.ReactNode;
     gap?: 0 | 1 | 2 | 3 | 4 | 5;
-    columns?: 1 | 2 | 3 | 4 | 5;
+    columns?: 1 | 2 | 3 | 4 | 5 | "auto";
     alignItems?: "baseline" | "center" | "end" | "start" | "stretch";
     justifyContent?: "center" | "end" | "space-between" | "start";
     flow?: "row" | "column" | "dense" | "row-dense" | "column-dense";
@@ -22,11 +22,11 @@ export interface GridProps {
 const Grid: React.ComponentType<GridProps> = ({
     children,
     gap = 0,
-    columns = 1,
+    columns = "auto",
     as = "div",
     flow = "row",
     alignItems = "stretch",
-    justifyContent = "center",
+    justifyContent = "start",
     className = "",
 }) => {
     return React.createElement(

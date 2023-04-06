@@ -18,7 +18,11 @@ const Button: React.ComponentType<ButtonProps> = ({
 }) => {
     return (
         <button
-            className={buildClassNames([style.button, style[variant]])}
+            className={buildClassNames([
+                style.button,
+                style[variant],
+                icon ? style.icon : "",
+            ])}
             type="button"
         >
             {children}

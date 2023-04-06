@@ -6,3 +6,4 @@ export { Container } from "./container";
 export { Flex } from "./flex";
 export { Grid } from "./grid";
 export { Tooltip } from "./tooltip";
+export { IconGitHub, IconArrow, IconCross } from "./icon";

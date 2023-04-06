@@ -16,7 +16,7 @@ const ColorSwatch: React.ComponentType<{ color: string; hsla?: boolean }> = ({
 
 const SectionColors: React.ComponentType = () => {
     return (
-        <Flex as="section" alignItems="start" direction="column">
+        <Grid as="section" alignItems="start" columns={1}>
             <Text as={"h2"}>{"Colors"}</Text>
             <Flex alignItems="start" direction="column" gap={0}>
                 <Text>{"Brand:"}</Text>
@@ -76,11 +76,11 @@ const SectionColors: React.ComponentType = () => {
                                     index * 5 === 0 ||
                                     index * 5 === 100 ? undefined : (
                                         <Tooltip
+                                            key={`${color}-${index}`}
                                             tip={`--${color}-${index * 5}`}
                                             position="right"
                                         >
                                             <ColorSwatch
-                                                key={`${color}-${index}`}
                                                 color={`${color}-${index * 5}`}
                                                 hsla
                                             />
@@ -91,7 +91,7 @@ const SectionColors: React.ComponentType = () => {
                     ))}
                 </Grid>
             </Flex>
-        </Flex>
+        </Grid>
     );
 };
 
