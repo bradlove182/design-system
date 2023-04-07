@@ -16,27 +16,27 @@ const ColorSwatch: React.ComponentType<{ color: string; hsla?: boolean }> = ({
 
 const SectionColors: React.ComponentType = () => {
     return (
-        <Grid as="section" alignItems="start" columns={1}>
+        <Grid as="section" gap={3} columns={1} className={style.section}>
             <Text as={"h2"}>{"Colors"}</Text>
-            <Flex alignItems="start" direction="column" gap={0}>
+            <Grid gap={1}>
                 <Text>{"Brand:"}</Text>
                 <Tooltip tip="--brand" position="right">
                     <ColorSwatch color="brand" />
                 </Tooltip>
-            </Flex>
-            <Flex alignItems="start" direction="column" gap={0}>
+            </Grid>
+            <Grid gap={1}>
                 <Text>{"Background:"}</Text>
                 <Tooltip tip="--background" position="right">
                     <ColorSwatch color="background" />
                 </Tooltip>
-            </Flex>
-            <Flex alignItems="start" direction="column" gap={0}>
+            </Grid>
+            <Grid gap={1}>
                 <Text>{"Foreground:"}</Text>
                 <Tooltip tip="--foreground" position="right">
                     <ColorSwatch color="foreground" />
                 </Tooltip>
-            </Flex>
-            <Flex alignItems="start" direction="column" gap={0}>
+            </Grid>
+            <Grid gap={1}>
                 <Text>{"Typeface:"}</Text>
                 <Flex>
                     <Tooltip tip="--text" position="right">
@@ -49,10 +49,10 @@ const SectionColors: React.ComponentType = () => {
                         <ColorSwatch color="text-amplified" />
                     </Tooltip>
                 </Flex>
-            </Flex>
-            <Flex alignItems="start" direction="column" gap={0}>
+            </Grid>
+            <Grid gap={1}>
                 <Text>{"Palette:"}</Text>
-                <Grid columns={4} gap={5} className={style["palette-grid"]}>
+                <Grid columns={4} gap={9} className={style["palette-grid"]}>
                     {[
                         "gray",
                         "pink",
@@ -90,7 +90,7 @@ const SectionColors: React.ComponentType = () => {
                         </Grid>
                     ))}
                 </Grid>
-            </Flex>
+            </Grid>
         </Grid>
     );
 };

@@ -5,7 +5,7 @@ import IconDot from "./dot";
 
 export interface IconProps {
     variant?:
-        | "brand"
+        | "info"
         | "error"
         | "success"
         | "warning"

@@ -10,8 +10,8 @@
     color: var(--text-amplified);
 }
 
-.brand {
-    color: var(--brand);
+.info {
+    color: var(--text-info);
 }
 
 .error {

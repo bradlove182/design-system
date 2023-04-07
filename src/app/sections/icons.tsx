@@ -1,17 +1,14 @@
 import React from "react";
 import { Text, Grid, Icon } from "../../components";
+import style from "../index.module.css";
 
 const SectionIcons: React.ComponentType = () => {
     return (
-        <Grid as="section" alignItems="start" columns={1} gap={3}>
+        <Grid as="section" gap={6} className={style.section}>
             <Text as={"h2"}>{"Icons"}</Text>
-            <Grid columns={1} gap={5}>
-                <Grid
-                    flow="column"
-                    alignItems="center"
-                    justifyContent="space-between"
-                >
-                    <Icon.GitHub variant="brand" />
+            <Grid columns={1} gap={9}>
+                <Grid flow="column" alignItems="center">
+                    <Icon.GitHub variant="info" />
                     <Icon.GitHub variant="error" />
                     <Icon.GitHub variant="success" />
                     <Icon.GitHub variant="warning" />
@@ -20,7 +17,11 @@ const SectionIcons: React.ComponentType = () => {
                     <Icon.GitHub variant="amplified" />
                 </Grid>
                 <Grid columns={1} gap={3}>
-                    <Grid columns={5} alignItems="center">
+                    <Grid
+                        columns={5}
+                        alignItems="center"
+                        justifyContent="start"
+                    >
                         <Icon.GitHub size={5} />
                         <Icon.GitHub size={4} />
                         <Icon.GitHub size={3} />

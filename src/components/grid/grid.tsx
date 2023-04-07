@@ -10,7 +10,7 @@ import { buildClassNames } from "../../utils/class";
 
 export interface GridProps {
     children: React.ReactNode;
-    gap?: 0 | 1 | 2 | 3 | 4 | 5 | 6;
+    gap?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
     columns?: 1 | 2 | 3 | 4 | 5 | "auto";
     alignItems?: "baseline" | "center" | "end" | "start" | "stretch";
     justifyContent?: "center" | "end" | "space-between" | "start";
@@ -26,7 +26,7 @@ const Grid: React.ComponentType<GridProps> = ({
     as = "div",
     flow = "row",
     alignItems = "stretch",
-    justifyContent = "start",
+    justifyContent = "",
     className = "",
 }) => {
     return React.createElement(
