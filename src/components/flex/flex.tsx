@@ -10,7 +10,7 @@ import style from "./index.module.css";
 
 export interface FlexProps {
     children: React.ReactNode;
-    gap?: 0 | 1 | 2 | 3 | 4 | 5;
+    gap?: 0 | 1 | 2 | 3 | 4 | 5 | 6;
     direction?: "column" | "column-reverse" | "row" | "row-reverse";
     alignItems?:
         | "baseline"

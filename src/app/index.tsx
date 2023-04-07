@@ -4,6 +4,8 @@ import {
     SectionIcons,
     SectionLists,
     SectionButtons,
+    SectionCards,
+    SectionsInlineCode,
 } from "./sections";
 import { Button, Text, Container, Flex } from "../components";
 
@@ -23,6 +25,8 @@ function App() {
                     <SectionIcons />
                     <SectionLists />
                     <SectionButtons />
+                    <SectionCards />
+                    <SectionsInlineCode />
                 </Flex>
             </Container>
         </div>

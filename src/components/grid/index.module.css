@@ -24,6 +24,10 @@
     gap: var(--spacing-5);
 }
 
+.gap-6 {
+    gap: var(--spacing-6);
+}
+
 .columns-1 {
     grid-template-columns: repeat(1, 1fr);
 }

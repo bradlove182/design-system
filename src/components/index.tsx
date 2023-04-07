@@ -8,3 +8,5 @@ export { Grid } from "./grid";
 export { Tooltip } from "./tooltip";
 export { Icon } from "./icon";
 export { List } from "./list";
+export { Card } from "./card";
+export { InlineCode } from "./inline-code";

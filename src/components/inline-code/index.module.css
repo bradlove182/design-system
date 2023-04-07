@@ -1,0 +1,12 @@
+.code {
+    background-color: var(--foreground);
+    border-color: var(--border-color);
+    border-width: 1px;
+    box-shadow: var(--elevation-1);
+    padding: 2px var(--spacing-2);
+    border-radius: var(--border-radius-3);
+    font-family: var(--font-mono);
+    color: var(--brand);
+    display: inline;
+    width: max-content;
+}

@@ -23,6 +23,10 @@
     gap: var(--spacing-5);
 }
 
+.gap-6 {
+    gap: var(--spacing-6);
+}
+
 .direction-row {
     flex-direction: row;
 }
