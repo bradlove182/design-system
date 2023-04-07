@@ -20,7 +20,7 @@ const SectionTypography: React.ComponentType = () => {
                         "h6",
                     ] as IntrinsicTextElements[]
                 ).map((value) => (
-                    <Grid>
+                    <Grid key={value}>
                         <Text>{value.toLocaleUpperCase()}</Text>
                         <Text as={value}>
                             {
@@ -32,7 +32,7 @@ const SectionTypography: React.ComponentType = () => {
             </Grid>
             <Grid as="section" className={style.section} gap={3}>
                 {([1, 2, 3, 4, 5, 6, 7] as const).map((value) => (
-                    <Grid>
+                    <Grid key={value}>
                         <Text>{`Text Size ${value}`}</Text>
                         <Text size={value}>
                             {

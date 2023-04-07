@@ -4,6 +4,10 @@
     --background: hsla(var(--gray-90));
     --foreground: hsla(var(--gray-85));
     --tooltip: hsla(var(--gray-80));
+    --background-info: hsla(var(--blue-30), 10%);
+    --background-success: hsla(var(--green-30), 10%);
+    --background-error: hsla(var(--red-30), 10%);
+    --background-warning: hsla(var(--yellow-30), 10%);
 
     --text: hsla(var(--gray-15));
     --text-amplified: hsla(var(--gray-0));

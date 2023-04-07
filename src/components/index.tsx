@@ -10,3 +10,4 @@ export { Icon } from "./icon";
 export { List } from "./list";
 export { Card } from "./card";
 export { InlineCode } from "./inline-code";
+export { Pill } from "./pill";
