@@ -49,6 +49,27 @@ const SectionIcons: React.ComponentType = () => {
                         <Icon.Dot size={2} />
                         <Icon.Dot size={1} />
                     </Grid>
+                    <Grid columns={5} alignItems="center">
+                        <Icon.EyeOpen size={5} />
+                        <Icon.EyeOpen size={4} />
+                        <Icon.EyeOpen size={3} />
+                        <Icon.EyeOpen size={2} />
+                        <Icon.EyeOpen size={1} />
+                    </Grid>
+                    <Grid columns={5} alignItems="center">
+                        <Icon.EyeClosed size={5} />
+                        <Icon.EyeClosed size={4} />
+                        <Icon.EyeClosed size={3} />
+                        <Icon.EyeClosed size={2} />
+                        <Icon.EyeClosed size={1} />
+                    </Grid>
+                    <Grid columns={5} alignItems="center">
+                        <Icon.Mail size={5} />
+                        <Icon.Mail size={4} />
+                        <Icon.Mail size={3} />
+                        <Icon.Mail size={2} />
+                        <Icon.Mail size={1} />
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

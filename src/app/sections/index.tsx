@@ -6,3 +6,4 @@ export { default as SectionButtons } from "./buttons";
 export { default as SectionCards } from "./cards";
 export { default as SectionInlineCode } from "./inline-code";
 export { default as SectionPills } from "./pills";
+export { default as SectionFormComponents } from "./form";

@@ -2,6 +2,9 @@ import IconArrow from "./arrow";
 import IconCross from "./cross";
 import IconGitHub from "./github";
 import IconDot from "./dot";
+import IconEyeOpen from "./eye-open";
+import IconEyeClosed from "./eye-closed";
+import IconMail from "./mail";
 
 export interface IconProps {
     variant?:
@@ -21,5 +24,8 @@ Icon.Arrow = IconArrow;
 Icon.GitHub = IconGitHub;
 Icon.Cross = IconCross;
 Icon.Dot = IconDot;
+Icon.EyeOpen = IconEyeOpen;
+Icon.EyeClosed = IconEyeClosed;
+Icon.Mail = IconMail;
 
 export { Icon };

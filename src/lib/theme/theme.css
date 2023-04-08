@@ -56,7 +56,7 @@
     --spacing-8: 56px;
     --spacing-9: 64px;
 
-    --border-color: hsla(var(--gray-80));
+    --border-color: hsla(var(--gray-75));
 
     --border-radius-1: 2px;
     --border-radius-2: 4px;
@@ -69,7 +69,10 @@
     --border-3: 3px;
     --border-4: 4px;
 
+    --form-input-background: hsla(var(--gray-100));
     --form-input-disabled: hsla(var(--gray-55));
+    --form-input-glow: 0 2px 20px -2px hsla(var(--indigo-35), 1);
+    --form-input-border: hsla(var(--gray-65));
 
     --box-shadow-glow: 0 2px 40px -4px hsla(var(--indigo-35), 1);
     --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 1%);

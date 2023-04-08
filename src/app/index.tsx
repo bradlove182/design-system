@@ -7,8 +7,9 @@ import {
     SectionCards,
     SectionInlineCode,
     SectionPills,
+    SectionFormComponents,
 } from "./sections";
-import { Button, Text, Container, Flex } from "../components";
+import { Text, Container, Flex } from "../components";
 
 import style from "./index.module.css";
 
@@ -26,6 +27,7 @@ function App() {
                     <SectionIcons />
                     <SectionLists />
                     <SectionButtons />
+                    <SectionFormComponents />
                     <SectionCards />
                     <SectionPills />
                     <SectionInlineCode />
