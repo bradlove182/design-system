@@ -35,7 +35,6 @@
 
 .input:has(input:disabled) svg {
     color: var(--text-subdued);
-    opacity: 0.7;
 }
 
 .input input:disabled,
@@ -69,5 +68,9 @@
 .input:has(input:not(:disabled):hover) svg,
 .input:has(input:not(:disabled):focus) svg,
 .input:has(input:not(:disabled):active) svg {
+    color: var(--brand);
+}
+
+.input:has(input:not(:placeholder-shown):not(:disabled):not(:focus)) svg {
     color: var(--brand);
 }

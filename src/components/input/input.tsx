@@ -35,7 +35,7 @@ const Input: React.ComponentType<InputProps> = ({
         <div className={style["input-wrapper"]}>
             {label ? <Label id={id}>{label}</Label> : undefined}
             <div className={style.input}>
-                {type === "email" ? <Icon.Mail /> : undefined}
+                {type === "email" ? <Icon.At /> : undefined}
                 <input
                     id={id}
                     type={type === "password" && showPassword ? "text" : type}
@@ -43,6 +43,7 @@ const Input: React.ComponentType<InputProps> = ({
                     value={value}
                     placeholder={placeholder}
                     disabled={disabled}
+                    minLength={1}
                 />
                 {type === "password" ? (
                     <button

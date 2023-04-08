@@ -1,23 +1,14 @@
 import React from "react";
 import type { IconProps } from ".";
 import style from "./index.module.css";
-import { buildClassNames } from "../../utils/class";
 
-interface IconArrowProps extends IconProps {
-    direction?: "up" | "down" | "left" | "right";
-}
-
-const IconArrow: React.ComponentType<IconArrowProps> = ({
+const IconAt: React.ComponentType<IconProps> = ({
     variant = "default",
     size = 3,
-    direction = "right",
 }) => {
     return (
         <svg
-            className={buildClassNames([
-                style.icon,
-                style[`direction-${direction}`],
-            ])}
+            className={style.icon}
             style={
                 {
                     "--icon-size": `var(--icon-size-${size})`,
@@ -25,8 +16,6 @@ const IconArrow: React.ComponentType<IconArrowProps> = ({
                 } as React.CSSProperties
             }
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -34,12 +23,12 @@ const IconArrow: React.ComponentType<IconArrowProps> = ({
             strokeLinecap="round"
             strokeLinejoin="round"
         >
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
         </svg>
     );
 };
 
-IconArrow.displayName = "Icon Arrow";
+IconAt.displayName = "Icon At";
 
-export default IconArrow;
+export default IconAt;

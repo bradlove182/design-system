@@ -8,13 +8,13 @@ const SectionIcons: React.ComponentType = () => {
             <Text as={"h2"}>{"Icons"}</Text>
             <Grid columns={1} gap={9}>
                 <Grid flow="column" alignItems="center">
-                    <Icon.Eye variant="info" />
-                    <Icon.Eye variant="error" />
-                    <Icon.Eye variant="success" />
-                    <Icon.Eye variant="warning" />
-                    <Icon.Eye variant="default" />
-                    <Icon.Eye variant="subdued" />
-                    <Icon.Eye variant="amplified" />
+                    <Icon.At variant="info" />
+                    <Icon.At variant="error" />
+                    <Icon.At variant="success" />
+                    <Icon.At variant="warning" />
+                    <Icon.At variant="default" />
+                    <Icon.At variant="subdued" />
+                    <Icon.At variant="amplified" />
                 </Grid>
                 <Grid columns={1} gap={3}>
                     <Grid
@@ -22,53 +22,46 @@ const SectionIcons: React.ComponentType = () => {
                         alignItems="center"
                         justifyContent="start"
                     >
-                        <Icon.GitHub size={5} />
+                        <Icon.GitHub size={8} />
+                        <Icon.GitHub size={6} />
                         <Icon.GitHub size={4} />
-                        <Icon.GitHub size={3} />
                         <Icon.GitHub size={2} />
                         <Icon.GitHub size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <Icon.Arrow size={5} />
+                        <Icon.Arrow size={8} />
+                        <Icon.Arrow size={6} />
                         <Icon.Arrow size={4} />
-                        <Icon.Arrow size={3} />
                         <Icon.Arrow size={2} />
                         <Icon.Arrow size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <Icon.Cross size={5} />
+                        <Icon.Cross size={8} />
+                        <Icon.Cross size={6} />
                         <Icon.Cross size={4} />
-                        <Icon.Cross size={3} />
                         <Icon.Cross size={2} />
                         <Icon.Cross size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <Icon.Dot size={5} />
-                        <Icon.Dot size={4} />
-                        <Icon.Dot size={3} />
-                        <Icon.Dot size={2} />
-                        <Icon.Dot size={1} />
+                        <Icon.Circle size={8} />
+                        <Icon.Circle size={6} />
+                        <Icon.Circle size={4} />
+                        <Icon.Circle size={2} />
+                        <Icon.Circle size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <Icon.Eye size={5} />
+                        <Icon.Eye size={8} />
+                        <Icon.Eye size={6} />
                         <Icon.Eye size={4} />
-                        <Icon.Eye size={3} />
                         <Icon.Eye size={2} />
                         <Icon.Eye size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <Icon.EyeClosed size={5} />
-                        <Icon.EyeClosed size={4} />
-                        <Icon.EyeClosed size={3} />
-                        <Icon.EyeClosed size={2} />
-                        <Icon.EyeClosed size={1} />
-                    </Grid>
-                    <Grid columns={5} alignItems="center">
-                        <Icon.Mail size={5} />
-                        <Icon.Mail size={4} />
-                        <Icon.Mail size={3} />
-                        <Icon.Mail size={2} />
-                        <Icon.Mail size={1} />
+                        <Icon.At size={8} />
+                        <Icon.At size={6} />
+                        <Icon.At size={4} />
+                        <Icon.At size={2} />
+                        <Icon.At size={1} />
                     </Grid>
                 </Grid>
             </Grid>

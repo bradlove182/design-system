@@ -8,7 +8,7 @@ export interface ListItemProps {
 const ListItem: React.ComponentType<ListItemProps> = ({ children }) => {
     return (
         <li>
-            <Icon.Dot size={4} />
+            <Icon.Circle size={1} />
             {children}
         </li>
     );

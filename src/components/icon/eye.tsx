@@ -1,5 +1,4 @@
-import React, { type CSSProperties } from "react";
-import { buildClassNames } from "../../utils/class";
+import React from "react";
 import type { IconProps } from ".";
 import style from "./index.module.css";
 
@@ -14,14 +13,14 @@ const IconEye: React.ComponentType<IconProps> = ({
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             style={
                 {
                     "--icon-size": `var(--icon-size-${size})`,
-                    "--icon-color": `var(--text-${variant})`,
-                } as CSSProperties
+                    "--icon-color": `var(--text-${variant}, inherit)`,
+                } as React.CSSProperties
             }
         >
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>

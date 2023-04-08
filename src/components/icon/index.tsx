@@ -1,11 +1,9 @@
 import IconArrow from "./arrow";
-import IconCross from "./cross";
+import IconCross from "./x";
 import IconGitHub from "./github";
-import IconDot from "./dot";
-import IconEyeOpen from "./eye-open";
-import IconEyeClosed from "./eye-closed";
+import IconCircle from "./circle";
 import IconEye from "./eye";
-import IconMail from "./mail";
+import IconAt from "./at";
 
 export interface IconProps {
     variant?:
@@ -16,7 +14,7 @@ export interface IconProps {
         | "default"
         | "subdued"
         | "amplified";
-    size?: 1 | 2 | 3 | 4 | 5;
+    size?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 }
 
 const Icon = () => {};
@@ -24,10 +22,8 @@ const Icon = () => {};
 Icon.Arrow = IconArrow;
 Icon.GitHub = IconGitHub;
 Icon.Cross = IconCross;
-Icon.Dot = IconDot;
+Icon.Circle = IconCircle;
 Icon.Eye = IconEye;
-Icon.EyeOpen = IconEyeOpen;
-Icon.EyeClosed = IconEyeClosed;
-Icon.Mail = IconMail;
+Icon.At = IconAt;
 
 export { Icon };

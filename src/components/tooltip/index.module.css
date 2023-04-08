@@ -1,6 +1,8 @@
 .tooltip {
     position: relative;
     user-select: none;
+    height: max-content;
+    width: max-content;
 }
 
 .tooltip:after {

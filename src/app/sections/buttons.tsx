@@ -13,30 +13,30 @@ const SectionButtons: React.ComponentType = () => {
                 </Flex>
                 <Flex gap={3}>
                     <Button variant="gradient">
-                        <Icon.GitHub />
+                        <Icon.Arrow direction="left" />
                         {"Gradient"}
                     </Button>
                     <Button>
-                        <Icon.GitHub />
+                        <Icon.Arrow direction="left" />
                         {"Button"}
                     </Button>
                     <Button disabled>
-                        <Icon.GitHub />
+                        <Icon.Arrow direction="left" />
                         {"Button"}
                     </Button>
                 </Flex>
                 <Flex gap={3}>
                     <Button variant="gradient">
                         {"Gradient"}
-                        <Icon.GitHub />
+                        <Icon.Arrow />
                     </Button>
                     <Button>
                         {"Button"}
-                        <Icon.GitHub />
+                        <Icon.Arrow />
                     </Button>
                     <Button disabled>
                         {"Button"}
-                        <Icon.GitHub />
+                        <Icon.Arrow />
                     </Button>
                 </Flex>
                 <Flex gap={3}>
