@@ -2,7 +2,7 @@ import React from "react";
 import type { IconProps } from ".";
 import style from "./index.module.css";
 
-const IconAt: React.ComponentType<IconProps> = ({
+const IconTick: React.ComponentType<IconProps> = ({
     variant = "default",
     size = 3,
     animate = false,
@@ -24,38 +24,23 @@ const IconAt: React.ComponentType<IconProps> = ({
             strokeLinecap="round"
             strokeLinejoin="round"
         >
-            <circle
-                cx="12"
-                cy="12"
-                r="4"
+            <polyline
+                points="20 6 9 17 4 12"
                 style={
                     animate
                         ? {
                               strokeDasharray: 30,
-                              strokeDashoffset: "var(--at-sign-circle, 4)",
+                              strokeDashoffset: "var(--tick, 30)",
                               transition:
-                                  "stroke-dashoffset 0.6s ease var(--at-sign-delay, 0.3s)",
+                                  "stroke-dashoffset 0.6s ease var(--tick-delay, 0s)",
                           }
                         : {}
                 }
-            ></circle>
-            <path
-                d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"
-                style={
-                    animate
-                        ? {
-                              strokeDasharray: 107,
-                              strokeDashoffset: "var(--at-sign, 227)",
-                              transition:
-                                  "stroke-dashoffset 0.8s ease var(--at-sign-delay, 0.3s)",
-                          }
-                        : {}
-                }
-            ></path>
+            ></polyline>
         </svg>
     );
 };
 
-IconAt.displayName = "Icon At";
+IconTick.displayName = "Icon Tick";
 
-export default IconAt;
+export default IconTick;

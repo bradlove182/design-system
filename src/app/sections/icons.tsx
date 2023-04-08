@@ -63,6 +63,13 @@ const SectionIcons: React.ComponentType = () => {
                         <Icon.At size={2} />
                         <Icon.At size={1} />
                     </Grid>
+                    <Grid columns={5} alignItems="center">
+                        <Icon.Tick size={8} />
+                        <Icon.Tick size={6} />
+                        <Icon.Tick size={4} />
+                        <Icon.Tick size={2} />
+                        <Icon.Tick size={1} />
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

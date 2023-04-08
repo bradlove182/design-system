@@ -35,7 +35,12 @@ const Input: React.ComponentType<InputProps> = ({
         <div className={style["input-wrapper"]}>
             {label ? <Label id={id}>{label}</Label> : undefined}
             <div className={style.input}>
-                {type === "email" ? <Icon.At /> : undefined}
+                {type === "email" ? (
+                    <div className={style["email-icon"]}>
+                        <Icon.At animate />
+                        <Icon.Tick animate />
+                    </div>
+                ) : undefined}
                 <input
                     id={id}
                     type={type === "password" && showPassword ? "text" : type}

@@ -71,6 +71,28 @@
     color: var(--brand);
 }
 
-.input:has(input:not(:placeholder-shown):not(:disabled):not(:focus)) svg {
-    color: var(--brand);
+.input:has(input:not(:placeholder-shown):not(:disabled)) svg {
+    color: var(--icon-color, var(--brand));
+}
+
+.input:has(input[type="email"]:not(:placeholder-shown):valid) {
+    --at-sign: 120;
+    --at-sign-delay: 0s;
+    --at-sign-circle: 30;
+    --tick: 0;
+    --tick-delay: 0.5s;
+    --icon-color: var(--text-success);
+}
+
+.email-icon {
+    position: relative;
+    height: var(--icon-size-3);
+    width: var(--icon-size-3);
+}
+
+.email-icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

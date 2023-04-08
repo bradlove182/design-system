@@ -9,6 +9,7 @@
     -webkit-text-fill-color: transparent;
     background-image: var(--gradient-0);
     display: inline-block;
+    width: max-content;
 }
 
 .h1,
