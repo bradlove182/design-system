@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type CSSProperties } from "react";
 import { buildClassNames } from "../../utils/class";
 import type { IconProps } from ".";
 import style from "./index.module.css";
@@ -12,11 +12,13 @@ const IconGitHub: React.ComponentType<IconProps> = ({
             viewBox="0 0 15 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={buildClassNames([
-                style.icon,
-                style[variant],
-                style[`size-${size}`],
-            ])}
+            className={style.icon}
+            style={
+                {
+                    "--icon-size": `var(--icon-size-${size})`,
+                    "--icon-color": `var(--text-${variant})`,
+                } as CSSProperties
+            }
         >
             <path
                 fillRule="evenodd"

@@ -1,3 +1,9 @@
+.icon {
+    color: var(--icon-color, var(--text));
+    height: var(--icon-size, var(--icon-size-3));
+    width: var(--icon-size, var(--icon-size-3));
+}
+
 .default {
     color: var(--text);
 }

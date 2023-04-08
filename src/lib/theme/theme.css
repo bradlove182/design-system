@@ -72,7 +72,7 @@
     --form-input-background: hsla(var(--gray-100));
     --form-input-disabled: hsla(var(--gray-55));
     --form-input-glow: 0 2px 20px -2px hsla(var(--indigo-35), 1);
-    --form-input-border: hsla(var(--gray-65));
+    --form-input-border: hsla(var(--gray-60));
 
     --box-shadow-glow: 0 2px 40px -4px hsla(var(--indigo-35), 1);
     --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 1%);

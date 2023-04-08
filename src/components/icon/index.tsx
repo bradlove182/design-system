@@ -4,6 +4,7 @@ import IconGitHub from "./github";
 import IconDot from "./dot";
 import IconEyeOpen from "./eye-open";
 import IconEyeClosed from "./eye-closed";
+import IconEye from "./eye";
 import IconMail from "./mail";
 
 export interface IconProps {
@@ -24,6 +25,7 @@ Icon.Arrow = IconArrow;
 Icon.GitHub = IconGitHub;
 Icon.Cross = IconCross;
 Icon.Dot = IconDot;
+Icon.Eye = IconEye;
 Icon.EyeOpen = IconEyeOpen;
 Icon.EyeClosed = IconEyeClosed;
 Icon.Mail = IconMail;

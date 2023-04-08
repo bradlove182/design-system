@@ -10,7 +10,7 @@ export interface InputProps {
     type?: "text" | "password" | "email";
     label?: React.ReactNode;
     value?: string;
-    onChange: React.ChangeEventHandler<HTMLInputElement>;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
     placeholder?: string;
     disabled?: boolean;
 }
@@ -45,8 +45,11 @@ const Input: React.ComponentType<InputProps> = ({
                     disabled={disabled}
                 />
                 {type === "password" ? (
-                    <button onClick={handleShowPasswordOnClick}>
-                        {showPassword ? <Icon.EyeOpen /> : <Icon.EyeClosed />}
+                    <button
+                        onClick={handleShowPasswordOnClick}
+                        disabled={disabled}
+                    >
+                        <Icon.Eye />
                     </button>
                 ) : undefined}
             </div>

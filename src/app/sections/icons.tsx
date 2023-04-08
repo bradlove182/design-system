@@ -8,13 +8,13 @@ const SectionIcons: React.ComponentType = () => {
             <Text as={"h2"}>{"Icons"}</Text>
             <Grid columns={1} gap={9}>
                 <Grid flow="column" alignItems="center">
-                    <Icon.GitHub variant="info" />
-                    <Icon.GitHub variant="error" />
-                    <Icon.GitHub variant="success" />
-                    <Icon.GitHub variant="warning" />
-                    <Icon.GitHub variant="default" />
-                    <Icon.GitHub variant="subdued" />
-                    <Icon.GitHub variant="amplified" />
+                    <Icon.Eye variant="info" />
+                    <Icon.Eye variant="error" />
+                    <Icon.Eye variant="success" />
+                    <Icon.Eye variant="warning" />
+                    <Icon.Eye variant="default" />
+                    <Icon.Eye variant="subdued" />
+                    <Icon.Eye variant="amplified" />
                 </Grid>
                 <Grid columns={1} gap={3}>
                     <Grid
@@ -50,11 +50,11 @@ const SectionIcons: React.ComponentType = () => {
                         <Icon.Dot size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
-                        <Icon.EyeOpen size={5} />
-                        <Icon.EyeOpen size={4} />
-                        <Icon.EyeOpen size={3} />
-                        <Icon.EyeOpen size={2} />
-                        <Icon.EyeOpen size={1} />
+                        <Icon.Eye size={5} />
+                        <Icon.Eye size={4} />
+                        <Icon.Eye size={3} />
+                        <Icon.Eye size={2} />
+                        <Icon.Eye size={1} />
                     </Grid>
                     <Grid columns={5} alignItems="center">
                         <Icon.EyeClosed size={5} />

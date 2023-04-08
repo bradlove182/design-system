@@ -9,27 +9,20 @@ const SectionFormComponents: React.ComponentType = () => {
                 <Input
                     label="Label"
                     id="email"
-                    onChange={() => {}}
                     placeholder="brad@bradlove.co.za"
                     type="email"
                 />
                 <Input
                     label="Label"
                     id="email"
-                    onChange={() => {}}
                     placeholder="brad@bradlove.co.za"
                     type="email"
                     disabled
+                    value="brad@bradlove.co.za"
                 />
+                <Input id="password" placeholder="Password" type="password" />
                 <Input
                     id="password"
-                    onChange={() => {}}
-                    placeholder="Password"
-                    type="password"
-                />
-                <Input
-                    id="password"
-                    onChange={() => {}}
                     placeholder="Password"
                     type="password"
                     disabled
