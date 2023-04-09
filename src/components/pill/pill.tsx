@@ -3,12 +3,12 @@ import { buildClassNames } from "../../utils/class";
 import style from "./index.module.css";
 
 export interface PillProps {
-    variant?: "info" | "success" | "error" | "warning";
+    variant?: "brand" | "default" | "info" | "success" | "error" | "warning";
     children: React.ReactNode;
 }
 
 const Pill: React.ComponentType<PillProps> = ({
-    variant = "info",
+    variant = "default",
     children,
 }) => {
     return (

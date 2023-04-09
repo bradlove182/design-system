@@ -20,7 +20,7 @@ function App() {
                 <Grid gap={9} alignItems="start">
                     <Grid gap={0} alignItems="start">
                         <Flex>
-                            <Pill>{"v1.0"}</Pill>
+                            <Pill variant="info">{"v1.0"}</Pill>
                             <Pill variant="warning">{"Work In Progress"}</Pill>
                         </Flex>
                         <Text as={"h1"}>{"Design System / Components"}</Text>

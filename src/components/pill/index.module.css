@@ -34,3 +34,13 @@
     --pill-background: var(--background-warning);
     --pill-color: var(--text-warning);
 }
+
+.brand {
+    --pill-background: var(--background-brand);
+    --pill-color: var(--brand);
+}
+
+.default {
+    --pill-background: var(--background-default);
+    --pill-color: var(--text);
+}
