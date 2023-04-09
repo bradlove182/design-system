@@ -63,4 +63,6 @@ const Input: React.ComponentType<InputProps> = ({
         </div>
     );
 };
+
+Input.displayName = "Input";
 export default Input;

@@ -33,6 +33,7 @@ const List: ListComponent<ListProps> = ({
     );
 };
 
+List.displayName = "List";
 List.Item = ListItem;
 
 export default List;

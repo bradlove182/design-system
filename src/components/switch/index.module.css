@@ -35,6 +35,7 @@
 
 .switch input[type="checkbox"]:checked {
     background-color: var(--brand);
+    border-color: var(--brand);
 }
 
 .switch input[type="checkbox"]:checked:after {

@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useContext } from "react";
 import { Label } from "../label";
+import { RadioContext } from "./context";
 import style from "./index.module.css";
 
-export interface SwitchProps {
+export interface RadioItemProps {
     id: string;
     label?: string;
     checked?: boolean;
@@ -10,26 +13,30 @@ export interface SwitchProps {
     disabled?: boolean;
 }
 
-const Switch: React.ComponentType<SwitchProps> = ({
+const RadioItem: React.ComponentType<RadioItemProps> = ({
     id,
-    label,
-    checked,
     onChange,
-    disabled = false,
+    checked,
+    disabled,
+    label,
 }) => {
+    const radioName = useContext(RadioContext);
+
     return (
-        <div className={style.switch}>
+        <div className={style["radio-item"]}>
             <input
-                type="checkbox"
+                type="radio"
                 id={id}
                 onChange={onChange}
                 defaultChecked={checked}
                 disabled={disabled}
+                role="radio"
+                name={radioName}
             />
             {label ? <Label id={id}>{label}</Label> : undefined}
         </div>
     );
 };
 
-Switch.displayName = "Switch";
-export default Switch;
+RadioItem.displayName = "Radio Item";
+export default RadioItem;

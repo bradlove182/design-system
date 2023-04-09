@@ -31,4 +31,5 @@ const Checkbox: React.ComponentType<CheckboxProps> = ({
     );
 };
 
+Checkbox.displayName = "Checkbox";
 export default Checkbox;

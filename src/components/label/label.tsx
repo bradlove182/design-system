@@ -14,4 +14,5 @@ const Label: React.ComponentType<LabelProps> = ({ id, children }) => {
     );
 };
 
+Label.displayName = "Label";
 export default Label;

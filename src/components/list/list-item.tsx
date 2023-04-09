@@ -14,4 +14,5 @@ const ListItem: React.ComponentType<ListItemProps> = ({ children }) => {
     );
 };
 
+ListItem.displayName = "List Item";
 export default ListItem;

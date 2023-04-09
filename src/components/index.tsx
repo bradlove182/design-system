@@ -16,3 +16,4 @@ export { TextArea } from "./text-area";
 export { Checkbox } from "./checkbox";
 export { Label } from "./label";
 export { Switch } from "./switch";
+export { Radio } from "./radio";

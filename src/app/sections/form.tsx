@@ -6,6 +6,7 @@ import {
     TextArea,
     Checkbox,
     Switch,
+    Radio,
 } from "../../components";
 import style from "../index.module.css";
 
@@ -82,6 +83,25 @@ const SectionFormComponents: React.ComponentType = () => {
                     disabled
                 />
             </Grid>
+            <Grid columns={2} gap={2}>
+                <Radio name="options">
+                    <Radio.Item id="option-1" label="Option 1" checked />
+                    <Radio.Item id="option-2" label="Option 2" />
+                </Radio>
+                <Radio name="options-2">
+                    <Radio.Item id="option-3" label="Option 3" disabled />
+                    <Radio.Item
+                        id="option-4"
+                        label="Option 4"
+                        checked
+                        disabled
+                    />
+                </Radio>
+            </Grid>
+            <Radio name="options" direction="row">
+                <Radio.Item id="option-5" label="Option 5" />
+                <Radio.Item id="option-6" label="Option 6" />
+            </Radio>
         </Grid>
     );
 };
