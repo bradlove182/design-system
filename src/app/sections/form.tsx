@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, Input } from "../../components";
+import { Text, Grid, Input, TextArea } from "../../components";
 
 const SectionFormComponents: React.ComponentType = () => {
     return (
@@ -11,26 +11,39 @@ const SectionFormComponents: React.ComponentType = () => {
                     label="Name"
                     id="text-disabled"
                     disabled
-                    value="Bradley Love"
+                    value="John Doe"
                 />
                 <Input
                     id="email"
-                    placeholder="brad@bradlove.co.za"
+                    placeholder="example@email.com"
                     type="email"
                 />
                 <Input
                     id="email-disabled"
-                    placeholder="brad@bradlove.co.za"
+                    placeholder="Email Address"
                     type="email"
                     disabled
-                    value="brad@bradlove.co.za"
+                    value="email@address.com"
                 />
                 <Input id="password" placeholder="Password" type="password" />
                 <Input
                     id="password-disabled"
                     placeholder="Password"
                     type="password"
+                    value="supersecretpassword"
                     disabled
+                />
+                <TextArea
+                    label="Text Area"
+                    id="text-area"
+                    placeholder="Type some text here."
+                />
+                <TextArea
+                    id="text-area-disabled"
+                    placeholder="Text Area"
+                    value=""
+                    disabled
+                    label="Text Area"
                 />
             </Grid>
         </Grid>
