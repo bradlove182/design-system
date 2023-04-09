@@ -27,9 +27,9 @@
     opacity: 0.5;
 }
 
-.text-area textarea:hover,
-.text-area textarea:focus,
-.text-area textarea:active {
+.text-area textarea:not(:disabled):hover,
+.text-area textarea:not(:disabled):focus,
+.text-area textarea:not(:disabled):active {
     box-shadow: var(--form-input-glow);
     border-color: var(--brand);
 }

@@ -1,9 +1,16 @@
 import React from "react";
-import { Text, Grid, Input, TextArea } from "../../components";
+import { Text, Grid, Input, TextArea, Checkbox } from "../../components";
+import style from "../index.module.css";
 
 const SectionFormComponents: React.ComponentType = () => {
     return (
-        <Grid as="section" alignItems="start" columns={1} gap={3}>
+        <Grid
+            as="section"
+            alignItems="start"
+            columns={1}
+            gap={4}
+            className={style.section}
+        >
             <Text as={"h2"}>{"Form Components"}</Text>
             <Grid columns={2} gap={4}>
                 <Input label="Name" id="text" placeholder="Name" />
@@ -44,6 +51,17 @@ const SectionFormComponents: React.ComponentType = () => {
                     value=""
                     disabled
                     label="Text Area"
+                />
+            </Grid>
+            <Grid columns={2} gap={2}>
+                <Checkbox id="checkbox" label="Checkbox" />
+                <Checkbox id="checkbox-disabled" label="Checkbox" disabled />
+                <Checkbox id="checkbox" label="Checkbox" checked />
+                <Checkbox
+                    id="checkbox-disabled"
+                    label="Checkbox"
+                    disabled
+                    checked
                 />
             </Grid>
         </Grid>
