@@ -2,7 +2,7 @@ import React from "react";
 import { Label } from "../label";
 import style from "./index.module.css";
 
-export interface CheckboxProps {
+export interface SwitchProps {
     id: string;
     label?: string;
     checked?: boolean;
@@ -10,18 +10,18 @@ export interface CheckboxProps {
     disabled?: boolean;
 }
 
-const Checkbox: React.ComponentType<CheckboxProps> = ({
+const Switch: React.ComponentType<SwitchProps> = ({
     id,
     label,
     checked,
     onChange,
-    disabled,
+    disabled = false,
 }) => {
     return (
-        <div className={style.checkbox}>
+        <div className={style.switch}>
             <input
-                id={id}
                 type="checkbox"
+                id={id}
                 onChange={onChange}
                 defaultChecked={checked}
                 disabled={disabled}
@@ -31,4 +31,4 @@ const Checkbox: React.ComponentType<CheckboxProps> = ({
     );
 };
 
-export default Checkbox;
+export default Switch;

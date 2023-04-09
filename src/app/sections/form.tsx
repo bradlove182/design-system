@@ -1,5 +1,12 @@
 import React from "react";
-import { Text, Grid, Input, TextArea, Checkbox } from "../../components";
+import {
+    Text,
+    Grid,
+    Input,
+    TextArea,
+    Checkbox,
+    Switch,
+} from "../../components";
 import style from "../index.module.css";
 
 const SectionFormComponents: React.ComponentType = () => {
@@ -56,12 +63,23 @@ const SectionFormComponents: React.ComponentType = () => {
             <Grid columns={2} gap={2}>
                 <Checkbox id="checkbox" label="Checkbox" />
                 <Checkbox id="checkbox-disabled" label="Checkbox" disabled />
-                <Checkbox id="checkbox" label="Checkbox" checked />
+                <Checkbox id="checkbox-checked" label="Checkbox" checked />
                 <Checkbox
-                    id="checkbox-disabled"
+                    id="checkbox-checked-disabled"
                     label="Checkbox"
                     disabled
                     checked
+                />
+            </Grid>
+            <Grid columns={2} gap={2}>
+                <Switch id="switch" label="Switch" />
+                <Switch id="switch-disabled" label="Switch" disabled />
+                <Switch id="switch-checked" label="Switch" checked />
+                <Switch
+                    id="switch-checked-disabled"
+                    label="Switch"
+                    checked
+                    disabled
                 />
             </Grid>
         </Grid>
