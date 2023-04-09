@@ -52,10 +52,11 @@ const Input: React.ComponentType<InputProps> = ({
                 />
                 {type === "password" ? (
                     <button
+                        className={showPassword ? style["show-password"] : ""}
                         onClick={handleShowPasswordOnClick}
                         disabled={disabled}
                     >
-                        <Icon.Eye />
+                        <Icon.Eye animate />
                     </button>
                 ) : undefined}
             </div>

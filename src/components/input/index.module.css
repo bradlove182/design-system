@@ -96,3 +96,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.show-password {
+    --eye: 0;
+    --eye-delay: 0s;
+    --strike: 32;
+    --strike-delay: 0s;
+}

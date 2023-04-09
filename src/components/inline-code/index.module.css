@@ -1,5 +1,5 @@
 .code {
-    background-color: var(--foreground);
+    background-color: hsla(var(--gray-80), 60%);
     border-color: var(--border-color);
     border-width: 1px;
     box-shadow: var(--elevation-1);
@@ -9,4 +9,5 @@
     color: var(--brand);
     display: inline;
     width: max-content;
+    font-size: var(--font-size-2);
 }

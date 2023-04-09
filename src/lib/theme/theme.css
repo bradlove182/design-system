@@ -2,7 +2,7 @@
     --brand: hsla(var(--indigo-25));
     --brand-subdued: hsla(var(--indigo-25), 10%);
     --background: hsla(var(--gray-90));
-    --foreground: hsla(var(--gray-85));
+    --foreground: hsla(var(--gray-88));
     --tooltip: hsla(var(--gray-80));
     --background-info: hsla(var(--blue-30), 10%);
     --background-success: hsla(var(--green-30), 10%);
@@ -59,7 +59,7 @@
     --spacing-8: 56px;
     --spacing-9: 64px;
 
-    --border-color: hsla(var(--gray-75));
+    --border-color: hsla(var(--gray-80));
 
     --border-radius-1: 2px;
     --border-radius-2: 4px;

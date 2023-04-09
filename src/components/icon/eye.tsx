@@ -5,6 +5,7 @@ import style from "./index.module.css";
 const IconEye: React.ComponentType<IconProps> = ({
     variant = "default",
     size = 3,
+    animate = false,
 }) => {
     return (
         <svg
@@ -24,7 +25,37 @@ const IconEye: React.ComponentType<IconProps> = ({
             }
         >
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-            <circle cx="12" cy="12" r="3"></circle>
+            <circle
+                cx="12"
+                cy="12"
+                r="3"
+                style={
+                    animate
+                        ? {
+                              strokeDasharray: 24,
+                              strokeDashoffset: "var(--eye, 24)",
+                              transition:
+                                  "stroke-dashoffset 0.6s ease var(--eye-delay, 0s)",
+                          }
+                        : {}
+                }
+            ></circle>
+            <line
+                x1="1"
+                y1="1"
+                x2="23"
+                y2="23"
+                style={
+                    animate
+                        ? {
+                              strokeDasharray: 32,
+                              strokeDashoffset: "var(--strike, 0)",
+                              transition:
+                                  "stroke-dashoffset 0.45s ease var(--eye-delay, 0s)",
+                          }
+                        : {}
+                }
+            ></line>
         </svg>
     );
 };
