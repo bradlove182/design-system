@@ -18,37 +18,39 @@ const SectionColors: React.ComponentType = () => {
     return (
         <Grid as="section" gap={3} columns={1} className={style.section}>
             <Text as={"h2"}>{"Colors"}</Text>
-            <Grid gap={1}>
-                <Text>{"Brand:"}</Text>
-                <Tooltip tip="--brand" position="right">
-                    <ColorSwatch color="brand" />
-                </Tooltip>
-            </Grid>
-            <Grid gap={1}>
-                <Text>{"Background:"}</Text>
-                <Tooltip tip="--background" position="right">
-                    <ColorSwatch color="background" />
-                </Tooltip>
-            </Grid>
-            <Grid gap={1}>
-                <Text>{"Foreground:"}</Text>
-                <Tooltip tip="--foreground" position="right">
-                    <ColorSwatch color="foreground" />
-                </Tooltip>
-            </Grid>
-            <Grid gap={1}>
-                <Text>{"Typeface:"}</Text>
-                <Flex>
-                    <Tooltip tip="--text" position="right">
-                        <ColorSwatch color="text" />
+            <Grid columns={2} gap={3}>
+                <Grid gap={1}>
+                    <Text>{"Brand:"}</Text>
+                    <Tooltip tip="--brand" position="right">
+                        <ColorSwatch color="brand" />
                     </Tooltip>
-                    <Tooltip tip="--text-subdued" position="right">
-                        <ColorSwatch color="text-subdued" />
+                </Grid>
+                <Grid gap={1}>
+                    <Text>{"Typeface:"}</Text>
+                    <Flex>
+                        <Tooltip tip="--text" position="right">
+                            <ColorSwatch color="text" />
+                        </Tooltip>
+                        <Tooltip tip="--text-subdued" position="right">
+                            <ColorSwatch color="text-subdued" />
+                        </Tooltip>
+                        <Tooltip tip="--text-amplified" position="right">
+                            <ColorSwatch color="text-amplified" />
+                        </Tooltip>
+                    </Flex>
+                </Grid>
+                <Grid gap={1}>
+                    <Text>{"Background:"}</Text>
+                    <Tooltip tip="--background" position="right">
+                        <ColorSwatch color="background" />
                     </Tooltip>
-                    <Tooltip tip="--text-amplified" position="right">
-                        <ColorSwatch color="text-amplified" />
+                </Grid>
+                <Grid gap={1}>
+                    <Text>{"Foreground:"}</Text>
+                    <Tooltip tip="--foreground" position="right">
+                        <ColorSwatch color="foreground" />
                     </Tooltip>
-                </Flex>
+                </Grid>
             </Grid>
             <Grid gap={1}>
                 <Text>{"Palette:"}</Text>
