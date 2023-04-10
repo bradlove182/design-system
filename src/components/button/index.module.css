@@ -9,9 +9,12 @@
     justify-content: center;
     position: relative;
     transition: box-shadow 0.3s ease;
+    outline: none;
 }
 
-.button:not(:disabled):not(.icon):hover {
+.button:not(:disabled):not(.icon):hover,
+.button:not(:disabled):not(.icon):focus,
+.button:not(:disabled):not(.icon):active {
     box-shadow: var(--box-shadow-glow);
 }
 
@@ -79,11 +82,15 @@
     color: var(--text);
 }
 
-.icon:hover:not(:disabled) svg {
+.icon:hover:not(:disabled) svg,
+.icon:focus:not(:disabled) svg,
+.icon:active:not(:disabled) svg {
     color: var(--brand);
 }
 
-.icon:hover:not(:disabled):after {
+.icon:hover:not(:disabled):after,
+.icon:focus:not(:disabled):after,
+.icon:active:not(:disabled):after {
     --border-hover-color: var(--brand);
     --border-thickness: 2px;
     --color: var(--brand);

@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    outline: none;
 }
 
 .checkbox input[type="checkbox"]:after {

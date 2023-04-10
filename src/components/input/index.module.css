@@ -42,6 +42,15 @@
     cursor: not-allowed;
 }
 
+.input button {
+    outline: none;
+}
+
+.input button:focus svg,
+.input button:active svg {
+    color: var(--brand);
+}
+
 .input input::placeholder {
     color: var(--text-subdued);
     opacity: 0.5;
