@@ -8,6 +8,7 @@ export interface ButtonBaseProps {
     size?: "default" | "small";
     icon?: boolean;
     disabled?: boolean;
+    onClick?: () => void;
 }
 
 export interface ButtonOnlyIconProps extends ButtonBaseProps {
@@ -30,6 +31,7 @@ const Button: React.ComponentType<ButtonProps> = ({
     size = "default",
     icon = false,
     disabled = false,
+    onClick,
 }) => {
     return (
         <button
@@ -41,6 +43,7 @@ const Button: React.ComponentType<ButtonProps> = ({
             ])}
             disabled={disabled}
             type="button"
+            onClick={onClick}
         >
             {children}
         </button>

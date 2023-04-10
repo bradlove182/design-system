@@ -17,4 +17,5 @@ export { Checkbox } from "./checkbox";
 export { Label } from "./label";
 export { Switch } from "./switch";
 export { Radio } from "./radio";
-export { Range } from "./Range";
+export { Range } from "./range";
+export { Modal } from "./modal";
