@@ -3,7 +3,7 @@ import type { IconProps } from ".";
 import style from "./index.module.css";
 import { buildClassNames } from "../../utils/class";
 
-interface IconArrowProps extends IconProps {
+export interface IconArrowProps extends IconProps {
     direction?: "up" | "down" | "left" | "right";
 }
 

@@ -19,14 +19,14 @@ export interface IconProps {
     animate?: boolean;
 }
 
-const Icon = () => {};
-
-Icon.Arrow = IconArrow;
-Icon.GitHub = IconGitHub;
-Icon.Cross = IconCross;
-Icon.Circle = IconCircle;
-Icon.Eye = IconEye;
-Icon.At = IconAt;
-Icon.Tick = IconTick;
+const Icon = {
+    Arrow: IconArrow,
+    GitHub: IconGitHub,
+    Cross: IconCross,
+    Circle: IconCircle,
+    Eye: IconEye,
+    At: IconAt,
+    Tick: IconTick
+} as const;
 
 export { Icon };
