@@ -7,7 +7,7 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
     build: {
         lib: {
-            entry: "./src/components/index.ts",
+            entry: "./src/index.ts",
             formats: ["es"],
             name: "Design System",
             fileName: "index"
