@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, Button, Icon, Flex } from "../../components";
+import { Text, Grid, Button, Icon, Flex } from "@components";
 
 const SectionButtons: React.ComponentType = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grid, Text } from "../../components";
+import { Grid, Text } from "@components";
 import type { IntrinsicTextElements } from "../../components/text/text";
 
 import style from "../index.module.css";

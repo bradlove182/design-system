@@ -8,7 +8,7 @@ import {
     Switch,
     Radio,
     Range,
-} from "../../components";
+} from "@components";
 import style from "../index.module.css";
 
 const SectionFormComponents: React.ComponentType = () => {

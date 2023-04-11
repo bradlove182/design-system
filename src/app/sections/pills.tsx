@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, Pill, Flex } from "../../components";
+import { Text, Grid, Pill, Flex } from "@components";
 
 const SectionPills: React.ComponentType = () => {
     return (

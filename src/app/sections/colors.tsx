@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Grid, Tooltip } from "../../components";
+import { Flex, Text, Grid, Tooltip } from "@components";
 import style from "../index.module.css";
 
 const ColorSwatch: React.ComponentType<{ color: string; hsla?: boolean }> = ({

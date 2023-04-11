@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, List } from "../../components";
+import { Text, Grid, List } from "@components";
 
 const SectionLists: React.ComponentType = () => {
     return (

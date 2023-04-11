@@ -1,5 +1,5 @@
 import React, { useRef, useCallback } from "react";
-import { Text, Grid, Card, Modal, Button } from "../../components";
+import { Text, Grid, Card, Modal, Button } from "@components";
 
 const SectionModals: React.ComponentType = () => {
     const modalRef = useRef<HTMLInputElement>(null);

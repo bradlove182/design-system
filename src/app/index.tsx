@@ -10,7 +10,7 @@ import {
     SectionFormComponents,
     SectionModals,
 } from "./sections";
-import { Text, Container, Flex, Pill, Grid } from "../components";
+import { Text, Container, Flex, Pill, Grid } from "@components";
 
 import style from "./index.module.css";
 

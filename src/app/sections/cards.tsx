@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, Card, InlineCode } from "../../components";
+import { Text, Grid, Card, InlineCode } from "@components";
 
 const SectionCards: React.ComponentType = () => {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, Icon } from "../../components";
+import { Text, Grid, Icon } from "@components";
 import style from "../index.module.css";
 
 const SectionIcons: React.ComponentType = () => {
