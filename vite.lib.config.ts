@@ -1,12 +1,22 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import dts from "vite-plugin-dts";
 import * as path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
     build: {
-        minify: true,
+        lib: {
+            entry: "./src/index.ts",
+            formats: ["es"],
+            name: "Design System",
+            fileName: "index",
+        },
+        target: "esnext",
+        minify: false,
+        sourcemap: true,
         rollupOptions: {
+            external: ["react", "react-dom"],
             output: {
                 globals: {
                     react: "React",
@@ -23,4 +33,5 @@ export default defineConfig({
             },
         ],
     },
+    plugins: [dts()],
 });
