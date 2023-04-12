@@ -71,6 +71,7 @@ const SectionColors: React.ComponentType = () => {
                             columns={5}
                             key={color}
                             className={style["color-swatch-grid"]}
+                            gap={2}
                         >
                             {Array(21)
                                 .fill(null)

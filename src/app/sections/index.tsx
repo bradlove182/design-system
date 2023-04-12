@@ -8,3 +8,4 @@ export { default as SectionInlineCode } from "./inline-code";
 export { default as SectionPills } from "./pills";
 export { default as SectionFormComponents } from "./form";
 export { default as SectionModals } from "./modals";
+export { default as SectionLogo } from "./logo";

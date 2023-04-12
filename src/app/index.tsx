@@ -9,6 +9,7 @@ import {
     SectionPills,
     SectionFormComponents,
     SectionModals,
+    SectionLogo,
 } from "./sections";
 import { Text, Container, Flex, Pill, Grid } from "@components";
 
@@ -26,6 +27,7 @@ function App() {
                         </Flex>
                         <Text as={"h1"}>{"Design System / Components"}</Text>
                     </Grid>
+                    <SectionLogo />
                     <SectionColors />
                     <SectionTypography />
                     <SectionIcons />
