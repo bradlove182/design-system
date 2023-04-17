@@ -16,7 +16,6 @@ export default defineConfig({
         minify: false,
         sourcemap: true,
         rollupOptions: {
-            external: ["react", "react-dom"],
             output: {
                 globals: {
                     react: "React",

@@ -21,7 +21,7 @@
     color: var(--text-amplified);
     font-weight: var(--font-weight-4);
     line-height: 1.9;
-    margin-bottom: 1.45rem;
+    margin-bottom: 0;
 }
 
 .h1 {
@@ -78,7 +78,11 @@
 
 .p {
     margin-bottom: var(--spacing-3);
-    margin-top: var(--spacing-3);
+    margin-top: 0;
+}
+
+.p:last-of-type {
+    margin-bottom: 0;
 }
 
 .strong {

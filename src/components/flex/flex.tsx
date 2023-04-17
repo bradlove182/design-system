@@ -10,6 +10,7 @@ import style from "./index.module.css";
 
 export interface FlexProps {
     children: React.ReactNode;
+    fullWidth?: boolean;
     gap?: 0 | 1 | 2 | 3 | 4 | 5 | 6;
     direction?: "column" | "column-reverse" | "row" | "row-reverse";
     alignItems?:
@@ -39,6 +40,7 @@ const Flex: React.ComponentType<FlexProps> = ({
     justifyContent = "start",
     wrap = "nowrap",
     as = "div",
+    fullWidth = false,
 }) => {
     return React.createElement(
         as,
@@ -50,6 +52,7 @@ const Flex: React.ComponentType<FlexProps> = ({
                 style[`direction-${direction}`],
                 style[`justify-${justifyContent}`],
                 style[wrap],
+                fullWidth ? style["full-width"] : "",
             ]),
         },
         children

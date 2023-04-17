@@ -1,6 +1,6 @@
 .flex {
     display: flex;
-    width: 100%;
+    width: auto;
 }
 
 .gap-1 {
@@ -101,4 +101,8 @@
 
 .justify-start {
     justify-content: start;
+}
+
+.full-width {
+    width: 100%;
 }
