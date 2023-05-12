@@ -93,14 +93,16 @@
         16px 32px 32px hsl(var(--shadow-color) / 0.2);
 }
 
-.bradlove-light {
-    --background: hsla(var(--gray-0));
-    --foreground: hsla(var(--gray-2));
-    --text: hsla(var(--gray-65));
-    --text-amplified: hsla(var(--gray-80));
-    --text-subdued: hsla(var(--gray-55));
-    --border-color: hsla(var(--gray-5));
-    --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 40%);
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: hsla(var(--gray-0));
+        --foreground: hsla(var(--gray-2));
+        --text: hsla(var(--gray-65));
+        --text-amplified: hsla(var(--gray-80));
+        --text-subdued: hsla(var(--gray-55));
+        --border-color: hsla(var(--gray-5));
+        --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 40%);
+    }
 }
 
 html {
