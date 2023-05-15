@@ -1,22 +1,23 @@
 import React from "react";
 
 import style from "./index.module.css";
+import { buildClassNames } from "../../utils/class";
 
 export interface ContainerProps {
     children: React.ReactNode;
-    width?: string;
+    size?: 1 | 2 | 3 | 4;
 }
 
 const Container: React.ComponentType<ContainerProps> = ({
     children,
-    width,
+    size = 4,
 }) => {
     return (
         <div
-            className={style.container}
-            style={{
-                maxWidth: width ?? "inherit",
-            }}
+            className={buildClassNames([
+                style.container,
+                style[`container-size-${size}`],
+            ])}
         >
             {children}
         </div>
