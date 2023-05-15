@@ -10,6 +10,7 @@ import {
     SectionFormComponents,
     SectionModals,
     SectionLogo,
+    SectionDropdown,
 } from "./sections";
 import { Text, Container, Flex, Pill, Grid } from "@components";
 
@@ -37,6 +38,7 @@ function App() {
                     <SectionCards />
                     <SectionPills />
                     <SectionInlineCode />
+                    <SectionDropdown />
                     <SectionModals />
                 </Grid>
             </Container>

@@ -20,3 +20,4 @@ export { Radio } from "./components/radio";
 export { Range } from "./components/range";
 export { Modal } from "./components/modal";
 export { Logo } from "./components/logo";
+export { Dropdown } from "./components/dropdown";

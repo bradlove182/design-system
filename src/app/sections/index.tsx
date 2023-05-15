@@ -9,3 +9,4 @@ export { default as SectionPills } from "./pills";
 export { default as SectionFormComponents } from "./form";
 export { default as SectionModals } from "./modals";
 export { default as SectionLogo } from "./logo";
+export { default as SectionDropdown } from "./dropdown";
