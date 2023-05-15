@@ -6,7 +6,7 @@ const SectionDropdown: React.ComponentType = () => {
         <Grid as="section" alignItems="start" columns={1} gap={3}>
             <Text as={"h2"}>{"Dropdown"}</Text>
             <Grid columns={1} gap={5}>
-                <Dropdown>
+                <Dropdown align="right">
                     <Dropdown.Target>
                         <Button>{"Show Dropdown"}</Button>
                     </Dropdown.Target>

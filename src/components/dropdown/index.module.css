@@ -4,6 +4,10 @@
     width: min-content;
 }
 
+.dropdown-right {
+    --align-right: 0;
+}
+
 .menu {
     background-color: var(--foreground);
     opacity: var(--dropdown-opacity, 0);
@@ -12,7 +16,8 @@
         transform var(--box-duration, 0.3s) ease;
     position: absolute;
     top: calc(100% + var(--spacing-2));
-    left: 0;
+    left: auto;
+    right: var(--align-right, auto);
     padding: var(--spacing-4) var(--spacing-3);
     min-width: var(--spacing-9);
     transform: translate(0, var(--box-offset, 10%));

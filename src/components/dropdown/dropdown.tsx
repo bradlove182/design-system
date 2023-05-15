@@ -1,8 +1,10 @@
 import React from "react";
 import style from "./index.module.css";
+import { buildClassNames } from "../../utils/class";
 
 export interface DropdownProps {
     children: React.ReactNode;
+    align?: "left" | "right";
 }
 
 export interface DropdownComponent<T> extends React.FunctionComponent<T> {
@@ -26,8 +28,20 @@ const DropdownMenu: React.ComponentType<{ children: React.ReactNode }> = ({
     </div>
 );
 
-const Dropdown: DropdownComponent<DropdownProps> = ({ children }) => {
-    return <div className={style.dropdown}>{children}</div>;
+const Dropdown: DropdownComponent<DropdownProps> = ({
+    children,
+    align = "left",
+}) => {
+    return (
+        <div
+            className={buildClassNames([
+                style.dropdown,
+                align === "right" ? style["dropdown-right"] : "",
+            ])}
+        >
+            {children}
+        </div>
+    );
 };
 
 Dropdown.Target = DropdownTarget;
