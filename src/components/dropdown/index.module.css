@@ -9,7 +9,7 @@
 }
 
 .menu {
-    background-color: var(--foreground);
+    background-color: var(--background);
     opacity: var(--dropdown-opacity, 0);
     visibility: var(--dropdown-visibility, hidden);
     transition: opacity var(--box-duration, 0.3s) ease,

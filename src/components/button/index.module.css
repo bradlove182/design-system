@@ -29,17 +29,14 @@
 }
 
 .button svg {
-    color: var(--text-white);
+    color: var(--text-brand);
 }
 
-.primary {
-    background-color: var(--brand);
-    color: var(--text-white);
-}
-
-.secondary {
+.brand {
     background-color: var(--brand-subdued);
     color: var(--brand);
+    border-width: var(--border-1);
+    border-color: var(--border-color);
 }
 
 .transparent {
@@ -87,6 +84,7 @@
     width: 44px;
     padding: 0;
     background-color: transparent;
+    border-width: 0;
 }
 
 .icon svg {
@@ -112,7 +110,7 @@
     box-shadow: var(--box-shadow-glow);
 }
 
-.icon.primary:not(:disabled):after {
+.icon.brand:not(:disabled):after {
     background-color: var(--foreground);
 }
 

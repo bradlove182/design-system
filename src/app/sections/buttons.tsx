@@ -40,12 +40,6 @@ const SectionButtons: React.ComponentType = () => {
                     </Button>
                 </Flex>
                 <Flex gap={3}>
-                    <Button variant="secondary">{"Button"}</Button>
-                    <Button variant="secondary" disabled>
-                        {"Button"}
-                    </Button>
-                </Flex>
-                <Flex gap={3}>
                     <Button variant="transparent">{"Button"}</Button>
                     <Button variant="transparent" disabled>
                         {"Button"}

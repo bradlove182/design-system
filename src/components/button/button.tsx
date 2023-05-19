@@ -20,14 +20,14 @@ export interface ButtonOnlyIconProps extends ButtonBaseProps {
 export interface ButtonNormalProps extends ButtonBaseProps {
     icon?: never;
     size?: never;
-    variant?: "primary" | "secondary" | "transparent" | "outline" | "gradient";
+    variant?: "brand" | "transparent" | "outline" | "gradient";
 }
 
 export type ButtonProps = ButtonOnlyIconProps | ButtonNormalProps;
 
 const Button: React.ComponentType<ButtonProps> = ({
     children,
-    variant = "primary",
+    variant = "brand",
     size = "default",
     icon = false,
     disabled = false,
