@@ -1,7 +1,7 @@
 :root {
     --brand: hsla(var(--indigo-25));
     --brand-subdued: hsla(var(--indigo-25), 10%);
-    --background: hsla(var(--gray-90));
+    --background: hsla(var(--gray-95));
     --foreground: hsla(var(--gray-88));
     --tooltip: hsla(var(--gray-80));
     --background-brand: hsla(var(--indigo-30), 10%);
@@ -80,7 +80,7 @@
     --form-input-border: hsla(var(--gray-60));
 
     --box-shadow-glow: 0 2px 40px -4px hsla(var(--indigo-35), 1);
-    --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 1%);
+    --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 0.5%);
 
     --elevation-1: 0.5px 1px 1px hsl(var(--shadow-color) / 0.7);
     --elevation-2: 1px 2px 2px hsl(var(--shadow-color) / 0.333),

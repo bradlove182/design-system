@@ -1,5 +1,5 @@
 .card {
-    background-color: var(--foreground);
+    background-color: var(--background);
     border-radius: var(--border-radius-3);
     border-color: var(--border-color);
     border-width: 1px;
@@ -8,6 +8,31 @@
         "header"
         "body";
     grid-template-rows: min-content 1fr;
+    position: relative;
+}
+
+.card:before,
+.card:after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        hsla(var(--gray-65)),
+        transparent
+    );
+    width: 20%;
+    height: 1px;
+}
+
+.card:before{
+    top: 0;
+    left: 0;
+}
+
+.card:after{
+    bottom: 0;
+    right: 0;
 }
 
 .header {
