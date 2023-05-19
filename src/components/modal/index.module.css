@@ -39,6 +39,32 @@
     transform: translate(0, var(--box-offset, 10%));
 }
 
+.modal-box:before,
+.modal-box:after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        hsla(var(--gray-75)),
+        hsla(var(--gray-55)),
+        hsla(var(--gray-75)),
+        transparent
+    );
+    width: 200px;
+    height: 1px;
+}
+
+.modal-box:before{
+    top: 0;
+    left: 0;
+}
+
+.modal-box:after{
+    bottom: 0;
+    right: 0;
+}
+
 .modal:has(input[type="checkbox"]:checked) {
     --modal-opacity: 1;
     --modal-visibility: visible;

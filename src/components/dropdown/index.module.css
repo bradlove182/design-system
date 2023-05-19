@@ -18,7 +18,7 @@
     top: calc(100% + var(--spacing-2));
     left: auto;
     right: var(--align-right, auto);
-    padding: var(--spacing-4) var(--spacing-3);
+    padding: var(--spacing-3) var(--spacing-3);
     min-width: var(--spacing-9);
     transform: translate(0, var(--box-offset, 10%));
     border-radius: var(--border-radius-4);

@@ -116,3 +116,8 @@ body {
     font-size: var(--font-size-3);
     line-height: 1.5;
 }
+
+::selection{
+    color: var(--brand);
+    background-color: var(--background-brand);
+}
