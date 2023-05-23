@@ -248,7 +248,7 @@
     --purple-100: var(--base-purple), 0%;
 
     --gradient-0: linear-gradient(
-        90deg,
+        var(--gradient-rotation, 90deg),
         hsla(var(--pink-60)),
         hsla(var(--blue-60))
     );

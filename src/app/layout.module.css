@@ -1,0 +1,10 @@
+.app-layout {
+    --navigation-width: 250px;
+    display: grid;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar content";
+    grid-template-columns: var(--navigation-width) 1fr;
+    grid-template-rows: min-content max-content;
+    min-height: 100vh;
+}

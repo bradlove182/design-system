@@ -4,12 +4,12 @@
     --background: hsla(var(--gray-95));
     --foreground: hsla(var(--gray-88));
     --tooltip: hsla(var(--gray-80));
-    --background-brand: hsla(var(--indigo-30), 10%);
-    --background-info: hsla(var(--blue-30), 10%);
-    --background-success: hsla(var(--green-30), 10%);
-    --background-error: hsla(var(--red-30), 10%);
-    --background-warning: hsla(var(--yellow-30), 10%);
-    --background-default: hsla(var(--gray-15), 10%);
+    --background-brand: hsla(var(--indigo-30), 15%);
+    --background-info: hsla(var(--blue-30), 15%);
+    --background-success: hsla(var(--green-30), 15%);
+    --background-error: hsla(var(--red-30), 15%);
+    --background-warning: hsla(var(--yellow-30), 15%);
+    --background-default: hsla(var(--gray-15), 15%);
 
     --text: hsla(var(--gray-15));
     --text-amplified: hsla(var(--gray-0));
@@ -21,7 +21,7 @@
     --text-warning: hsla(var(--yellow-30));
     --text-info: hsla(var(--blue-30));
 
-    --font-size-1: 14px;
+    --font-size-1: 12px;
     --font-size-2: 0.875rem;
     --font-size-3: 1rem;
     --font-size-4: 1.125rem;
@@ -74,10 +74,11 @@
     --border-3: 3px;
     --border-4: 4px;
 
-    --form-input-background: hsla(var(--gray-90));
-    --form-input-disabled: hsla(var(--gray-80));
+    --form-input-background: hsla(var(--gray-88));
+    --form-input-disabled: hsla(var(--gray-90));
+    --form-input-text-disabled: hsla(var(--gray-30), 25%);
     --form-input-glow: 0 2px 10px -2px hsla(var(--indigo-35), 1);
-    --form-input-border: var(--border-color);
+    --form-input-border: hsla(var(--gray-70));
 
     --box-shadow-glow: 0 2px 20px -4px hsla(var(--indigo-35), 1);
     --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 0.5%);
@@ -108,7 +109,7 @@
 html {
     background-color: var(--background);
     color: var(--text);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -117,7 +118,7 @@ body {
     line-height: 1.5;
 }
 
-::selection{
+::selection {
     color: var(--brand);
     background-color: var(--background-brand);
 }

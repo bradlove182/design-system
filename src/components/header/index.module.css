@@ -1,0 +1,14 @@
+.header {
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 var(--spacing-4);
+    height: 3.75rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-area: header;
+    z-index: 1;
+}

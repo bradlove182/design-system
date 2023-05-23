@@ -11,8 +11,8 @@ import {
     SectionModals,
     SectionLogo,
     SectionDropdown,
-} from "./sections";
-import { Text, Container, Flex, Pill, Grid } from "@components";
+} from "../sections";
+import { Text, Container, Flex, Pill, Grid } from "@lib";
 
 import style from "./index.module.css";
 
