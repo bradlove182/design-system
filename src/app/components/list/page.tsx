@@ -1,12 +1,18 @@
-import { List, Grid, Card, Text, InlineCode } from "@lib";
+import { List, Grid, Card, InlineCode, Flex, Text } from "@lib";
 
 export const metadata = {
     title: "List | Design System",
 };
 
 const ListPage = () => (
-    <Grid as="section" alignItems="start" columns={1} gap={3}>
-        <Grid columns={2} gap={5}>
+    <Grid as="section">
+        <Flex alignItems="center" justifyContent="space-between">
+            <Text as="h1">{"List"}</Text>
+            <InlineCode>
+                {'import { List } from "@bradlove/design-system"'}
+            </InlineCode>
+        </Flex>
+        <Grid gap={3}>
             <Card>
                 <Card.Header>
                     {"Unordered"}

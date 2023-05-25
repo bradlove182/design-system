@@ -1,4 +1,6 @@
 import { Navigation } from "src/components/navigation";
+import { Header } from "src/components/header";
+import { Container } from "@lib";
 
 import style from "./layout.module.css";
 
@@ -18,7 +20,10 @@ export default function RootLayout({
         <html lang="en">
             <body className={style["app-layout"]}>
                 <Navigation />
-                {children}
+                <Header />
+                <main className={style.content}>
+                    <Container size={3}>{children}</Container>
+                </main>
             </body>
         </html>
     );

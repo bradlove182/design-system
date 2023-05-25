@@ -80,7 +80,7 @@
     --form-input-glow: 0 2px 10px -2px hsla(var(--indigo-35), 1);
     --form-input-border: hsla(var(--gray-70));
 
-    --box-shadow-glow: 0 2px 20px -4px hsla(var(--indigo-35), 1);
+    --box-shadow-glow: 0 2px 30px -4px hsla(var(--indigo-35), 1);
     --shadow-color: var(--local-shadow-color, var(--base-gray-hue) 5% 0.5%);
 
     --elevation-1: 0.5px 1px 1px hsl(var(--shadow-color) / 0.7);

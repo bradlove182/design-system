@@ -12,7 +12,7 @@ export { Card } from "./components/card";
 export { InlineCode } from "./components/inline-code";
 export { Pill } from "./components/pill";
 export { Input } from "./components/input";
-export { TextArea } from "./components/text-area";
+export { Textarea } from "./components/text-area";
 export { Checkbox } from "./components/checkbox";
 export { Label } from "./components/label";
 export { Switch } from "./components/switch";

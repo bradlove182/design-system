@@ -9,7 +9,7 @@ import { name } from "./package.json";
 export default defineConfig({
     build: {
         lib: {
-            entry: path.resolve(__dirname, "src/index.ts"),
+            entry: path.resolve(__dirname, "src/lib/index.ts"),
             formats: ["es"],
             name,
             fileName: "index",
@@ -31,7 +31,7 @@ export default defineConfig({
         alias: [
             {
                 find: "@lib",
-                replacement: path.resolve(__dirname, "src/index.ts"),
+                replacement: path.resolve(__dirname, "src/lib/index.ts"),
             },
         ],
     },

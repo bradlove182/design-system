@@ -10,6 +10,7 @@
     position: relative;
     transition: box-shadow 0.3s ease;
     outline: none;
+    color: var(--text-amplified);
 }
 
 .button:not(:disabled):not(.icon):hover,
@@ -51,7 +52,7 @@
 
 .gradient {
     background-color: var(--background);
-    color: var(--text-white);
+    color: var(--text-amplified);
 }
 
 .gradient:after {

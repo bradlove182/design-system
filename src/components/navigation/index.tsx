@@ -19,15 +19,21 @@ export const Navigation: React.ComponentType = () => {
                         <Text size={1} as="span">
                             {"Getting Started"}
                         </Text>
-                        <NavLink href="/introduction">{"Introduction"}</NavLink>
-                        <NavLink href="/installation">{"Installation"}</NavLink>
-                        <NavLink href="/foundations">{"Foundations"}</NavLink>
+                        <NavLink href="/getting-started/introduction">
+                            {"Introduction"}
+                        </NavLink>
+                        <NavLink href="/getting-started/installation">
+                            {"Installation"}
+                        </NavLink>
+                        <NavLink href="/getting-started/foundations">
+                            {"Foundations"}
+                        </NavLink>
                     </Grid>
                     <Grid gap={1}>
                         <Text size={1} as="span">
                             {"Theme"}
                         </Text>
-                        <NavLink href="/colours">{"Colours"}</NavLink>
+                        <NavLink href="/theme/colours">{"Colours"}</NavLink>
                     </Grid>
                     <Grid gap={1}>
                         <Text size={1} as="span">
@@ -51,17 +57,6 @@ export const Navigation: React.ComponentType = () => {
                     </Grid>
                 </Grid>
             </nav>
-            <div className={style.footer}>
-                <Flex justifyContent="space-between" fullWidth>
-                    <Pill variant="info">{"v1.0"}</Pill>
-                    <Pill variant="warning">{"Development"}</Pill>
-                    <a>
-                        <Button as="span" icon size="small">
-                            <Icon.GitHub />
-                        </Button>
-                    </a>
-                </Flex>
-            </div>
         </div>
     );
 };

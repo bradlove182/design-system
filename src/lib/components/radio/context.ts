@@ -1,3 +1,5 @@
-import { createContext } from "react";
+import { createServerContext } from "react";
 
-export const RadioContext = createContext("");
+export const RadioContext = createServerContext("radio-context", {
+    name: "",
+});

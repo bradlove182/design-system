@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import RadioItem from "./radio-item";
 import style from "./index.module.css";
@@ -30,7 +28,7 @@ const Radio: RadioComponent<RadioProps> = ({
                 } as React.CSSProperties
             }
         >
-            <RadioContext.Provider value={name}>
+            <RadioContext.Provider value={{ name }}>
                 {children}
             </RadioContext.Provider>
         </div>

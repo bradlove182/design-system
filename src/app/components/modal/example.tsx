@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useRef, useCallback } from "react";
 import { Text, Grid, Card, Modal, Button } from "@lib";
 
-const SectionModals: React.ComponentType = () => {
+export const ModalExample: React.ComponentType = () => {
     const modalRef = useRef<HTMLInputElement>(null);
     const handleOpenModal = useCallback(() => {
         if (modalRef.current) {
@@ -9,11 +11,10 @@ const SectionModals: React.ComponentType = () => {
         }
     }, []);
     return (
-        <Grid as="section" alignItems="start" columns={1} gap={3}>
-            <Text as={"h2"}>{"Modals"}</Text>
-            <Grid columns={1} gap={5}>
-                <Button onClick={handleOpenModal}>{"Show Modal"}</Button>
-                <Modal id="modal-1" ref={modalRef}>
+        <>
+            <Button onClick={handleOpenModal}>{"Show Modal"}</Button>
+            <Modal id="modal-1" ref={modalRef}>
+                <Grid gap={3}>
                     <Text as="h3">
                         {"Congratulations random Internet user!"}
                     </Text>
@@ -22,11 +23,11 @@ const SectionModals: React.ComponentType = () => {
                             "You've been selected for a chance to get one year of subscription to use Wikipedia for free!"
                         }
                     </Text>
-                    <Button onClick={handleOpenModal}>{"Yay!"}</Button>
-                </Modal>
-            </Grid>
-        </Grid>
+                    <Button onClick={handleOpenModal} variant="gradient">
+                        {"Yay!"}
+                    </Button>
+                </Grid>
+            </Modal>
+        </>
     );
 };
-
-export default SectionModals;

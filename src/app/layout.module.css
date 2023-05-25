@@ -8,3 +8,9 @@
     grid-template-rows: min-content max-content;
     min-height: 100vh;
 }
+
+.content {
+    grid-area: content;
+    padding: var(--spacing-4);
+    height: max-content;
+}

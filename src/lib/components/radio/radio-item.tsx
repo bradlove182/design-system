@@ -21,7 +21,6 @@ const RadioItem: React.ComponentType<RadioItemProps> = ({
     label,
 }) => {
     const radioName = useContext(RadioContext);
-
     return (
         <div className={style["radio-item"]}>
             <input
@@ -31,7 +30,7 @@ const RadioItem: React.ComponentType<RadioItemProps> = ({
                 defaultChecked={checked}
                 disabled={disabled}
                 role="radio"
-                name={radioName}
+                name={radioName.name}
             />
             {label ? <Label id={id}>{label}</Label> : undefined}
         </div>

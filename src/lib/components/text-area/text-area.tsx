@@ -2,7 +2,7 @@ import React from "react";
 import { Label } from "../label";
 import style from "./index.module.css";
 
-export interface TextAreaProps {
+export interface TextareaProps {
     id: string;
     label?: string;
     value?: string;
@@ -11,7 +11,7 @@ export interface TextAreaProps {
     disabled?: boolean;
 }
 
-const TextArea: React.ComponentType<TextAreaProps> = ({
+const Textarea: React.ComponentType<TextareaProps> = ({
     id,
     value,
     label,
@@ -34,4 +34,4 @@ const TextArea: React.ComponentType<TextAreaProps> = ({
     );
 };
 
-export default TextArea;
+export default Textarea;
