@@ -1,0 +1,6 @@
+.swatch {
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--border-color);
+}

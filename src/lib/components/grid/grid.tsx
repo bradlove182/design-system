@@ -11,10 +11,10 @@ import { buildClassNames } from "../../../utils/class";
 export interface GridProps {
     children: React.ReactNode;
     gap?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
-    columns?: 1 | 2 | 3 | 4 | 5 | "auto";
+    columns?: 1 | 2 | 3 | 4 | 5;
     alignItems?: "baseline" | "center" | "end" | "start" | "stretch";
     justifyContent?: "center" | "end" | "space-between" | "start";
-    flow?: "row" | "column" | "dense" | "row-dense" | "column-dense";
+    flow?: "row" | "column" | "dense" | "row dense" | "column dense";
     as?: IntrinsicBlockElements;
     className?: string;
 }
@@ -22,7 +22,7 @@ export interface GridProps {
 const Grid: React.ComponentType<GridProps> = ({
     children,
     gap = 0,
-    columns = "auto",
+    columns = 1,
     as = "div",
     flow = "row",
     alignItems = "stretch",
@@ -32,15 +32,14 @@ const Grid: React.ComponentType<GridProps> = ({
     return React.createElement(
         as,
         {
-            className: buildClassNames([
-                style.grid,
-                style[`gap-${gap}`],
-                style[`flow-${flow}`],
-                style[`columns-${columns}`],
-                style[`items-${alignItems}`],
-                style[`justify-${justifyContent}`],
-                className,
-            ]),
+            className: buildClassNames([style.grid, className]),
+            style: {
+                "--grid-gap": `var(--spacing-${gap})`,
+                "--grid-columns": columns,
+                "--align-items": alignItems,
+                "--justify-content": justifyContent,
+                "--grid-auto-flow": flow,
+            },
         },
         children
     );

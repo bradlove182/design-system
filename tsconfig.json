@@ -6,7 +6,7 @@
         "./src/lib/index.ts"
       ],
       "@components": [
-        "./src/components/"
+        "./src/components/*"
       ]
     },
     "target": "ESNext",

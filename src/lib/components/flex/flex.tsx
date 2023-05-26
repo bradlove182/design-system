@@ -47,13 +47,15 @@ const Flex: React.ComponentType<FlexProps> = ({
         {
             className: buildClassNames([
                 style.flex,
-                style[`gap-${gap}`],
-                style[`items-${alignItems}`],
-                style[`direction-${direction}`],
-                style[`justify-${justifyContent}`],
-                style[wrap],
                 fullWidth ? style["full-width"] : "",
             ]),
+            style: {
+                "--grid-gap": `var(--spacing-${gap})`,
+                "--flex-wrap": wrap,
+                "--align-items": alignItems,
+                "--justify-content": justifyContent,
+                "--flex-direction": direction,
+            },
         },
         children
     );
