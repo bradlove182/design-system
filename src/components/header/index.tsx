@@ -10,7 +10,10 @@ export const Header: React.ComponentType = () => {
             <Flex alignItems="center" justifyContent="end" fullWidth>
                 <Pill variant="info">{"v1.0"}</Pill>
                 <Pill variant="warning">{"Work In Progress"}</Pill>
-                <a href="#">
+                <a
+                    href="https://github.com/bradlove182/design-system"
+                    target="_blank"
+                >
                     <Button as="span" icon size="small">
                         <Icon.GitHub />
                     </Button>
