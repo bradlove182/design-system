@@ -1,7 +1,7 @@
 import React from "react";
 
 import style from "./colour-swatch.module.css";
-import { Flex, Text, InlineCode } from "@lib";
+import { Flex, Text, InlineCode, Grid } from "@lib";
 
 export interface ColourSwatchProps {
     colour: string;
@@ -13,13 +13,16 @@ export const ColourSwatch: React.ComponentType<ColourSwatchProps> = ({
     hsla = false,
 }) => {
     return (
-        <div
-            className={style["swatch"]}
-            style={{
-                backgroundColor: hsla
-                    ? `hsla(var(--${colour}))`
-                    : `var(--${colour})`,
-            }}
-        />
+        <Flex>
+            <div
+                className={style["swatch"]}
+                style={{
+                    backgroundColor: hsla
+                        ? `hsla(var(--${colour}))`
+                        : `var(--${colour})`,
+                }}
+            />
+            <Text as="strong">{colour}</Text>
+        </Flex>
     );
 };

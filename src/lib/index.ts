@@ -10,6 +10,7 @@ export { Icon } from "./components/icon";
 export { List } from "./components/list";
 export { Card } from "./components/card";
 export { InlineCode } from "./components/inline-code";
+export { Code } from "./components/code";
 export { Pill } from "./components/pill";
 export { Input } from "./components/input";
 export { Textarea } from "./components/text-area";

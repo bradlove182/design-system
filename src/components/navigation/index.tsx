@@ -50,6 +50,7 @@ export const Navigation: React.ComponentType = () => {
                         <NavLink href="/components/inline-code">
                             {"Inline Code"}
                         </NavLink>
+                        <NavLink href="/components/code">{"Code"}</NavLink>
                         <NavLink href="/components/dropdown">
                             {"Dropdown"}
                         </NavLink>

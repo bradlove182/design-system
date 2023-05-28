@@ -26,7 +26,7 @@ const ColoursPage = () => (
             <Card>
                 <Card.Header>{"Palette"}</Card.Header>
                 <Card.Body>
-                    <Grid gap={6} columns={3}>
+                    <Grid gap={4} columns={2}>
                         {[
                             "gray",
                             "pink",
@@ -39,7 +39,7 @@ const ColoursPage = () => (
                             "indigo",
                             "purple",
                         ].map((color) => (
-                            <Flex gap={2} key={color} wrap="wrap">
+                            <Grid gap={2} key={color} columns={1}>
                                 {Array(21)
                                     .fill(null)
                                     .map((value, index) =>
@@ -52,7 +52,7 @@ const ColoursPage = () => (
                                             />
                                         )
                                     )}
-                            </Flex>
+                            </Grid>
                         ))}
                     </Grid>
                 </Card.Body>
