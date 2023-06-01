@@ -52,7 +52,7 @@ const FormPage = () => (
                                 placeholder="example@email.com"
                             />
                             <Input
-                                id="email-1"
+                                id="email-2"
                                 type="email"
                                 placeholder="example@email.com"
                                 disabled
@@ -66,7 +66,7 @@ const FormPage = () => (
                                 placeholder="Password"
                             />
                             <Input
-                                id="password-1"
+                                id="password-2"
                                 type="password"
                                 placeholder="Password"
                                 disabled

@@ -5,8 +5,8 @@
       "@lib": [
         "./src/lib/index.ts"
       ],
-      "@components": [
-        "./src/components/*"
+      "@utils": [
+        "./src/utils/index.ts"
       ]
     },
     "target": "ESNext",

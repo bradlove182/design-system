@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { buildClassNames } from "../../../utils/class";
+import { buildClassNames } from "@utils";
 import style from "./index.module.css";
 
 export type IntrinsicTextElements = Extract<

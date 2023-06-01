@@ -6,7 +6,7 @@ type IntrinsicBlockElements = Extract<
 >;
 
 import style from "./index.module.css";
-import { buildClassNames } from "../../../utils/class";
+import { buildClassNames } from "@utils";
 
 export interface GridProps {
     children: React.ReactNode;

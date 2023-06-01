@@ -18,6 +18,8 @@ const Radio: RadioComponent<RadioProps> = ({
     name,
     direction = "column",
 }) => {
+    const [, setRadioContext] = RadioContext;
+    setRadioContext(name);
     return (
         <div
             role="radiogroup"
@@ -28,9 +30,7 @@ const Radio: RadioComponent<RadioProps> = ({
                 } as React.CSSProperties
             }
         >
-            <RadioContext.Provider value={{ name }}>
-                {children}
-            </RadioContext.Provider>
+            {children}
         </div>
     );
 };

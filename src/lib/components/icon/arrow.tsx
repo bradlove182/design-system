@@ -1,7 +1,7 @@
 import React from "react";
 import type { IconProps } from ".";
 import style from "./index.module.css";
-import { buildClassNames } from "../../../utils/class";
+import { buildClassNames } from "@utils";
 
 export interface IconArrowProps extends IconProps {
     direction?: "up" | "down" | "left" | "right";

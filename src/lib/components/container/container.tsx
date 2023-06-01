@@ -1,7 +1,7 @@
 import React from "react";
 
 import style from "./index.module.css";
-import { buildClassNames } from "../../../utils/class";
+import { buildClassNames } from "@utils";
 
 export interface ContainerProps {
     children: React.ReactNode;

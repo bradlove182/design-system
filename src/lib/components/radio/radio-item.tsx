@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useContext } from "react";
+import React from "react";
 import { Label } from "../label";
 import { RadioContext } from "./context";
 import style from "./index.module.css";
@@ -20,7 +18,7 @@ const RadioItem: React.ComponentType<RadioItemProps> = ({
     disabled,
     label,
 }) => {
-    const radioName = useContext(RadioContext);
+    const [getRadioContext] = RadioContext;
     return (
         <div className={style["radio-item"]}>
             <input
@@ -30,7 +28,7 @@ const RadioItem: React.ComponentType<RadioItemProps> = ({
                 defaultChecked={checked}
                 disabled={disabled}
                 role="radio"
-                name={radioName.name}
+                name={getRadioContext()}
             />
             {label ? <Label id={id}>{label}</Label> : undefined}
         </div>

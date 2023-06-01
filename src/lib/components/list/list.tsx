@@ -1,6 +1,6 @@
 import React from "react";
 import ListItem from "./list-item";
-import { buildClassNames } from "../../../utils/class";
+import { buildClassNames } from "@utils";
 
 import style from "./index.module.css";
 

@@ -1,5 +1,4 @@
 import { createServerContext } from "react";
+import { serverContext } from "@utils";
 
-export const RadioContext = createServerContext("radio-context", {
-    name: "",
-});
+export const RadioContext = serverContext("");
