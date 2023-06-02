@@ -14,6 +14,7 @@ export const Navigation: React.ComponentType = () => {
                 </Flex>
             </div>
             <nav className={style.content}>
+                <div aria-hidden className={style["gradient-top"]} />
                 <Grid gap={4}>
                     <Grid gap={1}>
                         <Text size={1} as="span">
@@ -57,6 +58,7 @@ export const Navigation: React.ComponentType = () => {
                         <NavLink href="/components/modal">{"Modal"}</NavLink>
                     </Grid>
                 </Grid>
+                <div aria-hidden className={style["gradient-bottom"]} />
             </nav>
         </div>
     );
